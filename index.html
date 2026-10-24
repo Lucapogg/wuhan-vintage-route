@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>武汉一日双线古着捡漏路线图 · 手账页</title>
+<style>
+:root{
+  --paper:#FBF7EF;
+  --kraft:#E4D5C3;
+  --grid:#F4EFE4;
+  --brown:#8C6E4F;
+  --denim:#4A6FA5;
+  --green:#3F5D50;
+  --hi:#FFE44D;
+  --brick:#C0523C;
+  --ink:#3B2F2A;
+  --hand:"Kaiti SC","STKaiti",KaiTi,"楷体","Kaiti TC",cursive;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  --mono:"Courier New",ui-monospace,"SFMono-Regular",monospace;
+  --round:"Yuanti SC","YouYuan","幼圆","Kaiti SC",var(--hand);
+  --shadow:2px 5px 9px rgba(59,47,42,.18);
+  --tear:polygon(0 2%,3% .4%,9% 1.6%,17% .2%,26% 1.8%,35% .6%,44% 2%,53% .3%,62% 1.4%,71% .2%,81% 1.8%,90% .5%,97% 1.6%,100% 3%,99.2% 12%,100% 20%,99% 30%,99.6% 40%,99% 50%,100% 61%,99.2% 70%,99.8% 80%,99% 90%,100% 97%,96% 99.4%,88% 98.2%,79% 99.8%,70% 98.4%,61% 99.9%,52% 98.3%,43% 99.7%,34% 98.4%,25% 99.8%,16% 98.2%,8% 99.6%,2% 98.4%,0 95%,.8% 85%,0 75%,.9% 65%,.2% 55%,.9% 45%,0 35%,.7% 25%,.1% 15%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;padding:26px 0 70px;color:var(--ink);font-family:var(--sans);
+  line-height:1.62;font-size:14px;
+  background-color:#EBE2D2;
+  background-image:
+    radial-gradient(ellipse at 20% 0%,rgba(255,255,255,.55),transparent 58%),
+    repeating-linear-gradient(0deg,rgba(140,110,79,.06) 0 1px,transparent 1px 26px),
+    repeating-linear-gradient(90deg,rgba(140,110,79,.05) 0 1px,transparent 1px 26px);
+}
+::selection{background:rgba(255,228,77,.7)}
+.sheet{
+  position:relative;max-width:1120px;margin:0 auto;padding:30px 30px 50px;
+  background-color:var(--paper);border-radius:4px;
+  background-image:
+    radial-gradient(circle at 78% 4%,rgba(255,255,255,.85),transparent 42%),
+    repeating-linear-gradient(0deg,rgba(140,110,79,.085) 0 1px,transparent 1px 22px),
+    repeating-linear-gradient(90deg,rgba(140,110,79,.085) 0 1px,transparent 1px 22px),
+    radial-gradient(circle at 12% 60%,rgba(228,213,195,.28),transparent 55%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),0 22px 55px rgba(59,47,42,.22),0 3px 0 rgba(59,47,42,.05);
+  overflow:hidden;
+}
+/* 纸面颗粒 */
+.sheet::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.20;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='150' height='150' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+/* 折痕 + 压痕 */
+.sheet::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:
+    linear-gradient(104deg,transparent 47.6%,rgba(59,47,42,.055) 48.2%,rgba(255,255,255,.6) 48.6%,transparent 49.2%),
+    linear-gradient(76deg,transparent 61.4%,rgba(59,47,42,.04) 62%,rgba(255,255,255,.5) 62.4%,transparent 63%),
+    radial-gradient(120% 60% at 50% 100%,rgba(140,110,79,.10),transparent 70%);
+  mix-blend-mode:multiply;
+}
+.sheet > *{position:relative;z-index:3}
+
+/* ---------- 通用手账件 ---------- */
+.tape{
+  position:absolute;width:118px;height:30px;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255,.42));
+  box-shadow:0 2px 4px rgba(59,47,42,.10);
+  clip-path:polygon(0 6%,3% 0,6% 7%,9% 0,93% 1%,100% 8%,98% 52%,100% 96%,94% 100%,8% 99%,1% 95%,3% 50%);
+  opacity:.92;
+}
+.tape--blue{background:linear-gradient(180deg,rgba(74,111,165,.34),rgba(74,111,165,.18))}
+.tape--brick{background:linear-gradient(180deg,rgba(192,82,60,.28),rgba(192,82,60,.14))}
+.tape--green{background:linear-gradient(180deg,rgba(63,93,80,.30),rgba(63,93,80,.15))}
+.tape--hi{background:linear-gradient(180deg,rgba(255,228,77,.72),rgba(255,228,77,.5))}
+.tape--brown{background:linear-gradient(180deg,rgba(140,110,79,.34),rgba(140,110,79,.18))}
+
+.note{
+  position:relative;background-color:var(--kraft);
+  background-image:
+    radial-gradient(circle at 26% 18%,rgba(255,255,255,.42),transparent 46%),
+    repeating-linear-gradient(92deg,rgba(255,255,255,.10) 0 2px,transparent 2px 6px);
+  padding:12px 14px;font-family:var(--hand);font-size:14px;line-height:1.75;
+  box-shadow:0 0 0 3px rgba(251,247,239,.92),var(--shadow);
+  transform:rotate(var(--rot,1.2deg));
+}
+.note b{font-family:var(--sans);font-size:12px;letter-spacing:.02em}
+.sticky{
+  position:relative;background:var(--paper);padding:14px 14px 16px;
+  box-shadow:0 0 0 3px rgba(251,247,239,.9),2px 6px 10px rgba(59,47,42,.15);
+  transform:rotate(var(--rot,-2deg));font-family:var(--hand);font-size:13.5px;line-height:1.7;
+}
+.sticky::after{content:"";position:absolute;right:0;bottom:0;border-width:0 0 14px 14px;border-style:solid;border-color:transparent transparent rgba(140,110,79,.28) transparent}
+
+.hand{font-family:var(--hand)}
+.mono{font-family:var(--mono);letter-spacing:.01em}
+.hl{
+  background-image:linear-gradient(transparent 58%,rgba(255,228,77,.78) 58%,rgba(255,228,77,.78) 94%,transparent 94%);
+  padding:0 2px;
+}
+.hl--line{
+  display:inline-block;padding:2px 6px 4px;
+  background-image:linear-gradient(transparent 62%,rgba(255,228,77,.85) 62%,rgba(255,228,77,.85) 90%,transparent 90%);
+}
+.red{color:var(--brick)}
+.red-note{
+  font-family:var(--hand);color:var(--brick);font-size:12.5px;line-height:1.6;
+  display:inline-block;transform:rotate(-1.5deg);
+}
+.red-circle{position:relative;display:inline-block;padding:0 4px}
+.red-circle::after{
+  content:"";position:absolute;inset:1px -3px;border:1.6px solid rgba(192,82,60,.72);
+  border-radius:50% 46% 52% 48%/48% 52% 46% 54%;transform:rotate(-2deg);
+}
+
+/* ---------- 编号吊牌 ---------- */
+.tag{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:54px;height:54px;flex:0 0 auto;
+  background:var(--tc,var(--denim));color:#FDFAF3;
+  font-family:var(--mono);font-weight:700;font-size:19px;letter-spacing:.02em;
+  box-shadow:0 0 0 3px rgba(251,247,239,.95),2px 4px 7px rgba(59,47,42,.25);
+  transform:rotate(var(--rot,-2deg));
+  transition:transform .4s cubic-bezier(.2,.8,.3,1),box-shadow .4s;
+}
+.tag b{font-weight:700;position:relative;z-index:2}
+.tag--circle{border-radius:50%}
+.tag--square{border-radius:4px}
+.tag--square::before,.tag--circle::before{
+  content:"";position:absolute;top:8px;width:6px;height:6px;border-radius:50%;
+  background:var(--paper);box-shadow:inset 0 1px 1px rgba(59,47,42,.35);
+}
+.tag--square::before{left:50%;transform:translateX(-50%)}
+.tag--circle::before{left:50%;transform:translateX(-50%)}
+.tag--square b,.tag--circle b{padding-top:6px}
+.tag--tri{clip-path:polygon(50% 3%,97% 95%,3% 95%);width:60px;height:56px;
+  box-shadow:none;filter:drop-shadow(0 0 2px rgba(251,247,239,.95)) drop-shadow(0 0 2px rgba(251,247,239,.9)) drop-shadow(2px 4px 3px rgba(59,47,42,.3));}
+.tag--tri b{padding-top:16px;font-size:17px}
+.tag--flower{clip-path:polygon(50% 1%,63% 9%,77% 5%,83% 17%,95% 24%,92% 38%,100% 50%,91% 62%,97% 76%,83% 83%,77% 95%,63% 92%,50% 100%,37% 92%,23% 96%,17% 83%,5% 76%,8% 62%,0 50%,9% 38%,3% 24%,17% 17%,23% 5%,37% 9%);
+  width:58px;height:58px;box-shadow:none;
+  filter:drop-shadow(0 0 2px rgba(251,247,239,.95)) drop-shadow(2px 4px 3px rgba(59,47,42,.3));}
+.tag--hex{clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);width:58px;height:56px;
+  box-shadow:none;filter:drop-shadow(0 0 2px rgba(251,247,239,.95)) drop-shadow(2px 4px 3px rgba(59,47,42,.3));}
+.tag--star{clip-path:polygon(50% 0,61% 34%,98% 34%,68% 56%,79% 92%,50% 70%,21% 92%,32% 56%,2% 34%,39% 34%);
+  width:60px;height:58px;box-shadow:none;
+  filter:drop-shadow(0 0 2px rgba(251,247,239,.95)) drop-shadow(2px 4px 3px rgba(59,47,42,.3));}
+.tag--star b{padding-bottom:5px;font-size:16px}
+.tag--long{width:96px;height:42px;border-radius:22px}
+.tag--button{border-radius:50%;background:
+  radial-gradient(circle 3.2px at 34% 34%,var(--paper) 0 100%,transparent 100%),
+  radial-gradient(circle 3.2px at 66% 34%,var(--paper) 0 100%,transparent 100%),
+  radial-gradient(circle 3.2px at 34% 66%,var(--paper) 0 100%,transparent 100%),
+  radial-gradient(circle 3.2px at 66% 66%,var(--paper) 0 100%,transparent 100%),
+  var(--tc,var(--brown));}
+.tag--sm{width:42px;height:42px;font-size:14.5px;box-shadow:0 0 0 2px rgba(251,247,239,.95),1px 3px 5px rgba(59,47,42,.22)}
+.tag--sm.tag--tri{width:46px;height:42px}
+.tag--sm.tag--flower{width:44px;height:44px}
+.tag--sm.tag--hex{width:44px;height:42px}
+.tag--sm.tag--star{width:46px;height:44px}
+.tag--sm.tag--long{width:72px;height:32px;border-radius:16px}
+
+/* ---------- 页面结构 ---------- */
+.page-pad{padding:0 4px}
+.sec{margin-top:46px}
+.sec-head{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;position:relative;
+  padding:4px 10px 8px;margin-bottom:18px;border-bottom:1px dashed rgba(140,110,79,.5);
+}
+.sec-head .sec-no{
+  background:var(--ink);color:var(--paper);font-size:11px;padding:2px 7px;letter-spacing:.12em;
+  transform:rotate(-1.5deg);box-shadow:1px 2px 3px rgba(59,47,42,.2);
+}
+.sec-head h2{font-family:var(--round);font-size:23px;margin:0;letter-spacing:.05em;font-weight:700}
+.sec-head .sec-en{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--brown);text-transform:uppercase;opacity:.75}
+.sec-head .sec-tip{
+  margin-left:auto;font-family:var(--hand);font-size:12.5px;color:var(--brown);transform:rotate(-1deg);
+}
+/* ---------- 1 标题区 ---------- */
+.masthead{position:relative;padding:26px 6px 34px;text-align:center}
+.title-sticker{
+  position:relative;display:inline-block;padding:18px 30px 16px;background-color:var(--paper);
+  border:2px dashed rgba(140,110,79,.4);
+  transform:rotate(-3deg);
+  box-shadow:0 0 0 5px rgba(251,247,239,.9),4px 9px 16px rgba(59,47,42,.16);
+}
+.title-sticker::after{
+  content:"";position:absolute;left:0;right:0;bottom:6px;height:9px;
+  background:rgba(140,110,79,.12);filter:blur(1px);transform:rotate(-.4deg);
+}
+h1{
+  font-family:var(--round);font-weight:700;margin:0;
+  font-size:clamp(22px,4.6vw,44px);line-height:1.24;letter-spacing:.03em;
+  text-shadow:1px 1px 0 rgba(255,255,255,.85);
+}
+.masthead .kicker{
+  display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.24em;
+  color:var(--brown);margin-bottom:12px;transform:rotate(1deg);
+}
+.subline{
+  margin:18px auto 0;max-width:760px;font-family:var(--mono);font-size:12px;
+  color:var(--ink);display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0;
+  line-height:1.9;
+}
+.subline span{white-space:nowrap}
+.subline i{font-style:normal;color:var(--brown);opacity:.7;padding:0 8px}
+.masthead .teachers-line{margin-top:20px;font-family:var(--round);font-size:clamp(16px,2.6vw,22px);letter-spacing:.04em}
+.corner{position:absolute;z-index:4}
+.corner.tl{top:0;left:2%;transform:rotate(-24deg)}
+.corner.tr{top:6px;right:4%}
+.corner.bl{bottom:4px;left:5%}
+.corner.br{bottom:12px;right:3%;transform:rotate(9deg)}
+.btn-sticker{
+  width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#F6EADB,#CBB396 72%,#9C8567);
+  box-shadow:0 0 0 3px rgba(251,247,239,.9),2px 4px 6px rgba(59,47,42,.25),inset 0 -2px 4px rgba(59,47,42,.25);
+  position:relative;
+}
+.btn-sticker::before{content:"";position:absolute;inset:9px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(59,47,42,.2)}
+.btn-sticker::after{
+  content:"";position:absolute;left:50%;top:28%;width:1px;height:44%;background:rgba(59,47,42,.35);
+  box-shadow:0 0 0 1px rgba(59,47,42,.18);
+  transform:translateX(-50%) rotate(0deg);
+}
+.star-dec{width:26px;height:26px;background:var(--hi);
+  clip-path:polygon(50% 0,61% 34%,98% 34%,68% 56%,79% 92%,50% 70%,21% 92%,32% 56%,2% 34%,39% 34%);
+  filter:drop-shadow(0 0 2px rgba(251,247,239,.9)) drop-shadow(1px 2px 2px rgba(59,47,42,.25));}
+.star-dec--green{background:var(--green)}
+.star-dec--brown{background:var(--brown)}
+.no-tag{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--brown);
+  border:1px dashed rgba(140,110,79,.55);padding:3px 8px;background:rgba(251,247,239,.7);
+  display:inline-block;transform:rotate(-2deg);
+}
+/* 荧光下划线强调 */
+.anchor-line{
+  display:inline-block;margin-top:26px;padding:4px 10px 6px;font-family:var(--round);
+  font-size:clamp(14px,2.4vw,20px);
+  background-image:linear-gradient(transparent 64%,rgba(255,228,77,.9) 64%,rgba(255,228,77,.9) 92%,transparent 92%);
+  transform:rotate(-.6deg);
+}
+/* ---------- 2 路线总览 ---------- */
+.route{
+  display:grid;grid-template-columns:1.05fr 86px 1fr;gap:10px;align-items:stretch;
+  position:relative;
+}
+.map{
+  position:relative;background-color:rgba(255,255,255,.32);
+  border:1px solid rgba(140,110,79,.32);
+  padding:34px 12px 16px;min-height:246px;
+  box-shadow:inset 0 0 0 4px rgba(251,247,239,.55),2px 4px 8px rgba(59,47,42,.08);
+}
+.map::before{
+  content:"";position:absolute;inset:7px;border:1px dashed rgba(140,110,79,.22);pointer-events:none;
+}
+.map .map-tab{
+  position:absolute;top:-9px;left:10px;background:var(--paper);border:1px solid rgba(140,110,79,.4);
+  font-family:var(--mono);font-size:10px;letter-spacing:.1em;padding:2px 8px;transform:rotate(-2deg);
+  box-shadow:1px 2px 4px rgba(59,47,42,.12);
+}
+.map-note{position:absolute;right:8px;bottom:8px;max-width:150px;padding:8px 10px;font-size:12px;z-index:5}
+.map-footnote{
+  position:absolute;left:10px;bottom:8px;max-width:176px;margin:0;z-index:4;
+  font-family:var(--hand);font-size:10.5px;line-height:1.55;color:var(--brown);transform:rotate(-1.6deg);
+}
+.ug-row{display:flex;align-items:center;justify-content:center;gap:0;margin-top:22px}
+.ug-block{
+  position:relative;background:rgba(228,213,195,.55);border:1px solid rgba(140,110,79,.45);
+  padding:8px 8px 8px;width:31%;min-width:74px;text-align:center;
+  box-shadow:1px 3px 5px rgba(59,47,42,.1);
+  transform:rotate(var(--rot,-1deg));
+}
+.ug-block .blk-name{display:block;font-family:var(--sans);font-size:11px;font-weight:600;line-height:1.35;margin-top:6px}
+.ug-block .blk-meta{display:block;font-family:var(--mono);font-size:9px;color:var(--brown);margin-top:2px}
+.ug-link{position:relative;flex:1 1 auto;height:2px;max-width:38px;background:rgba(140,110,79,.5)}
+.ug-link::after{
+  content:"";position:absolute;right:-1px;top:-3px;border:4px solid transparent;border-left-color:rgba(140,110,79,.7);
+}
+.ug-return{
+  margin-top:18px;border:1px dashed rgba(63,93,80,.55);border-top:none;height:26px;
+  position:relative;background:linear-gradient(180deg,transparent 60%,rgba(63,93,80,.05));
+}
+.ug-return span{
+  position:absolute;left:50%;bottom:-8px;transform:translateX(-50%);
+  background:var(--paper);padding:0 8px;font-family:var(--hand);font-size:11px;color:var(--green);
+}
+.ug-return::before{content:"";position:absolute;left:-1px;top:-1px;width:2px;height:26px;border-left:1px dashed rgba(63,93,80,.55)}
+.ug-return::after{content:"";position:absolute;right:-1px;top:-1px;width:2px;height:26px;border-right:1px dashed rgba(63,93,80,.55)}
+.street{position:relative;aspect-ratio:4/3.2;min-height:200px}
+.street svg{position:absolute;inset:0;width:100%;height:100%}
+.street .node{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px}
+.street .node em{
+  font-style:normal;font-family:var(--hand);font-size:10.5px;color:var(--ink);background:rgba(251,247,239,.88);
+  padding:0 4px;line-height:1.4;white-space:nowrap;
+}
+.street .star-node em{color:var(--brown)}
+.metro-jump{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+}
+.metro-jump .dash{flex:1;width:0;border-left:2px dashed rgba(74,111,165,.55);min-height:26px}
+.ticket{
+  position:relative;background:var(--paper);border:1px solid rgba(74,111,165,.5);
+  padding:8px 8px 7px;width:74px;text-align:center;
+  font-family:var(--mono);font-size:9px;line-height:1.45;color:var(--denim);
+  transform:rotate(-6deg);box-shadow:0 0 0 3px rgba(251,247,239,.9),2px 4px 6px rgba(59,47,42,.16);
+}
+.ticket::before,.ticket::after{
+  content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--paper);
+  top:50%;transform:translateY(-50%);box-shadow:inset 0 0 0 1px rgba(74,111,165,.35);
+}
+.ticket::before{left:-4px}
+.ticket::after{right:-4px}
+.ticket b{display:block;font-size:11px;letter-spacing:.06em;margin-bottom:2px}
+.ticket .tick-line{border-top:1px dashed rgba(74,111,165,.45);margin:4px 0 3px}
+.coffee-seal{
+  position:absolute;left:50%;bottom:6px;transform:translateX(-50%) rotate(-4deg);
+  width:56px;height:56px;border-radius:50%;background:var(--paper);
+  border:1px solid rgba(140,110,79,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:9px;color:var(--brown);line-height:1.25;
+  box-shadow:0 0 0 3px rgba(251,247,239,.85),2px 4px 7px rgba(59,47,42,.18);z-index:5;
+}
+.coffee-seal::before{content:"";position:absolute;inset:5px;border:1px dashed rgba(140,110,79,.35);border-radius:50%}
+.coffee-seal b{font-size:10px}
+.two-route-caption{
+  margin-top:14px;display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;
+}
+.two-route-caption .cmp{
+  flex:1 1 240px;font-family:var(--hand);font-size:13px;line-height:1.7;
+  border-left:3px solid rgba(140,110,79,.35);padding-left:10px;
+}
+.two-route-caption .cmp b{font-family:var(--round);font-size:15px;display:block;margin-bottom:2px}
+.cmp--ug{border-left-color:var(--denim)}
+.cmp--ug b{color:var(--denim)}
+.cmp--old{border-left-color:var(--green)}
+.cmp--old b{color:var(--green)}
+.stamp-inline{
+  width:74px;height:74px;border:2px solid rgba(192,82,60,.65);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:rgba(192,82,60,.82);font-family:var(--mono);font-size:8px;line-height:1.35;
+  transform:rotate(-11deg);position:relative;flex:0 0 auto;
+}
+.stamp-inline::before{content:"";position:absolute;inset:4px;border:1px dashed rgba(192,82,60,.45);border-radius:50%}
+.stamp-inline b{font-size:10px;letter-spacing:.06em}
+/* ---------- 3 时间轴 ---------- */
+.timeline{position:relative;padding-left:34px}
+.timeline::before{
+  content:"";position:absolute;left:11px;top:6px;bottom:10px;width:2px;
+  background-image:repeating-linear-gradient(to bottom,var(--brown) 0 8px,transparent 8px 15px);
+  opacity:.55;animation:stitch-y 7s linear infinite;
+}
+@keyframes stitch-y{to{background-position-y:60px}}
+.phase{position:relative;margin-top:22px}
+.phase:first-child{margin-top:0}
+.phase-head{
+  display:inline-flex;align-items:center;gap:8px;position:relative;
+  padding:5px 16px;font-family:var(--round);font-size:15px;letter-spacing:.08em;
+  background:rgba(255,255,255,.6);transform:rotate(-1.5deg);
+  box-shadow:0 0 0 2px rgba(251,247,239,.85),1px 3px 5px rgba(59,47,42,.14);
+  margin-bottom:10px;
+}
+.phase-head::before{
+  content:"";position:absolute;left:-28px;top:50%;width:12px;height:12px;border-radius:50%;
+  background:var(--pc,var(--brown));transform:translateY(-50%);
+  box-shadow:0 0 0 3px var(--paper),0 0 0 4px rgba(140,110,79,.35);
+}
+.phase-head .ph-time{font-family:var(--mono);font-size:10px;letter-spacing:.06em;opacity:.8}
+.phase--am{--pc:var(--denim)}
+.phase--noon{--pc:var(--brown)}
+.phase--pm{--pc:var(--green)}
+.phase--am .phase-head{background:rgba(74,111,165,.13)}
+.phase--noon .phase-head{background:rgba(140,110,79,.16)}
+.phase--pm .phase-head{background:rgba(63,93,80,.13)}
+.stop{
+  display:grid;grid-template-columns:96px 1fr auto;gap:6px 12px;align-items:baseline;
+  padding:9px 10px 9px 0;position:relative;border-bottom:1px dotted rgba(140,110,79,.28);
+}
+.stop:hover{background:rgba(255,255,255,.35)}
+.stop .st-time{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--ink)}
+.stop .st-name{font-size:13px;line-height:1.5}
+.stop .st-name b{font-weight:700}
+.stop .st-dur{
+  font-family:var(--mono);font-size:10px;color:var(--brown);white-space:nowrap;display:flex;gap:8px;
+}
+.stop .st-dur i{font-style:normal}
+.stop .st-dur u{text-decoration:none;color:var(--ink);font-weight:700}
+.stop .st-note{
+  grid-column:2 / span 2;font-family:var(--hand);font-size:11.5px;color:var(--brown);margin-top:-2px;
+}
+.stop.is-skip .st-name{color:var(--brown)}
+.countdown{
+  margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  border:1.5px dashed rgba(192,82,60,.65);padding:9px 14px;background:rgba(192,82,60,.06);
+  transform:rotate(-.5deg);position:relative;
+}
+.countdown .cd-label{
+  font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--brick);
+  border:1px solid rgba(192,82,60,.6);padding:2px 6px;transform:rotate(-2deg);white-space:nowrap;
+}
+.countdown p{margin:0;font-size:12px;font-family:var(--sans)}
+/* ---------- 4 店铺卡片 ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px 24px;align-items:start}
+.cardwrap{position:relative;filter:drop-shadow(1px 1px 0 rgba(255,255,255,.95)) drop-shadow(3px 6px 6px rgba(59,47,42,.2))}
+.cardwrap:nth-child(2n){margin-top:16px}
+.card-ring{
+  position:absolute;inset:-4px;background:#FFFEFB;clip-path:var(--tear);z-index:0;
+}
+.card{
+  position:relative;z-index:1;clip-path:var(--tear);
+  background-color:var(--kraft);
+  background-image:
+    radial-gradient(circle at 22% 10%,rgba(255,255,255,.5),transparent 44%),
+    repeating-linear-gradient(93deg,rgba(255,255,255,.12) 0 2px,transparent 2px 6px),
+    repeating-linear-gradient(3deg,rgba(140,110,79,.06) 0 1px,transparent 1px 9px);
+  padding:18px 17px 16px;
+}
+.card-top{display:flex;gap:10px;align-items:flex-start;margin-bottom:9px}
+.card-title{flex:1 1 auto;min-width:0}
+.card-title h3{margin:0;font-family:var(--round);font-size:16.5px;line-height:1.35;letter-spacing:.02em}
+.card-title .where{margin:3px 0 0;font-family:var(--mono);font-size:9.5px;color:#5C4B41;line-height:1.5}
+.stay{font-family:var(--mono);font-size:9px;color:var(--brown);text-align:right;line-height:1.3;flex:0 0 auto}
+.stay b{display:block;font-size:17px;color:var(--ink)}
+.stay b::after{content:" min";font-size:8px;font-weight:400;color:var(--brown)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 9px}
+.chips span{
+  font-family:var(--mono);font-size:9px;letter-spacing:.04em;padding:2px 7px;
+  background:rgba(251,247,239,.72);border:1px solid rgba(140,110,79,.35);border-radius:2px;
+  transform:rotate(-1deg);
+}
+.chips span.warn{color:var(--brick);border-color:rgba(192,82,60,.45)}
+.chips span.try{border-style:dashed}
+.kv{display:grid;grid-template-columns:62px 1fr;gap:4px 8px;margin:0}
+.kv dt{font-size:9.5px;font-weight:700;color:var(--brown);letter-spacing:.03em;padding-top:2px;
+  border-right:1px dotted rgba(140,110,79,.4)}
+.kv dd{margin:0;font-size:11.5px;line-height:1.6;color:#3B2F2A}
+.kv dd .mono{font-size:11px}
+.signal{
+  margin-top:10px;padding:8px 10px;background:rgba(251,247,239,.55);
+  border-left:3px solid var(--green);font-size:11.5px;line-height:1.65;
+  position:relative;transform:rotate(-.4deg);
+}
+.signal--danger{border-left-color:var(--brick)}
+.signal--photo{border-left-color:var(--denim)}
+.signal .sig-key{
+  font-family:var(--mono);font-size:9px;letter-spacing:.05em;padding:1px 5px;color:var(--paper);
+  background:var(--green);margin-right:5px;display:inline-block;
+}
+.signal--danger .sig-key{background:var(--brick)}
+.signal--photo .sig-key{background:var(--denim)}
+.card-foot{display:flex;gap:8px;align-items:flex-end;margin-top:12px;position:relative}
+.polaroid{
+  position:relative;background:#FFFDF7;padding:6px 6px 20px;flex:0 0 auto;
+  box-shadow:0 0 0 2px rgba(251,247,239,.9),2px 5px 8px rgba(59,47,42,.2);
+  transform:rotate(var(--rot,-3deg));
+}
+.polaroid .ph{
+  width:96px;height:68px;position:relative;overflow:hidden;
+  background:
+    repeating-linear-gradient(45deg,#DCCDB2 0 5px,#D5C5A9 5px 10px);
+  box-shadow:inset 0 0 10px rgba(59,47,42,.16);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+.polaroid .ph span{
+  font-family:var(--hand);font-size:9.5px;color:#54453A;padding:0 5px;line-height:1.4;
+  background:rgba(251,247,239,.55);
+}
+.polaroid .cap{
+  position:absolute;left:0;right:0;bottom:4px;text-align:center;
+  font-family:var(--hand);font-size:8.5px;color:#5C4B41;letter-spacing:.04em;
+}
+.card-foot .mini-note{flex:1 1 auto;font-family:var(--hand);font-size:11px;line-height:1.65;color:#5C4B41}
+.card-foot .stamp{margin-left:auto}
+.stamp{
+  width:70px;height:70px;border:2px solid rgba(192,82,60,.62);border-radius:50%;flex:0 0 auto;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+  color:rgba(192,82,60,.85);font-family:var(--mono);font-size:8px;line-height:1.3;text-align:center;
+  transform:rotate(-9deg);position:relative;opacity:.9;
+}
+.stamp::before{content:"";position:absolute;inset:4px;border:1px dashed rgba(192,82,60,.42);border-radius:50%}
+.stamp b{font-size:9.5px;letter-spacing:.04em}
+.card .tag{cursor:default}
+.card .tag:hover{transform:rotate(0deg) translateY(-3px)}
+/* ---------- 5 清单 ---------- */
+.checklist{display:flex;flex-direction:column;gap:2px}
+.cl-row{
+  display:grid;grid-template-columns:14px 98px 1fr 96px 76px 86px;
+  gap:6px 10px;align-items:center;padding:8px 6px;
+  border-bottom:1px dotted rgba(140,110,79,.3);position:relative;
+}
+.cl-row:nth-child(2n){background:rgba(228,213,195,.22)}
+.cl-row .cl-name{font-size:12.5px;font-weight:600}
+.cl-row .cl-size,.cl-row .cl-price{font-family:var(--mono);font-size:10.5px}
+.cl-row .cl-price{color:var(--ink)}
+.cl-row .cl-grade{display:flex;gap:3px;font-family:var(--mono);font-size:9px}
+.grade-badge{
+  display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+  border:1px solid rgba(140,110,79,.45);color:var(--brown);background:rgba(251,247,239,.6);
+}
+.grade-badge.on{background:var(--green);color:var(--paper);border-color:var(--green)}
+.grade-badge.on.b,.grade-badge.on.c{background:var(--brown)}
+.cl-row .dots{display:flex;gap:4px;flex-wrap:wrap}
+.dots i{
+  width:7px;height:7px;border-radius:50%;border:1px solid rgba(59,47,42,.4);display:block;
+  background:transparent;
+}
+.dots i.on{background:var(--brick);border-color:var(--brick)}
+.cl-row .cl-flag{
+  font-family:var(--hand);font-size:10px;color:var(--brown);text-align:right;
+}
+.cl-legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-family:var(--mono);font-size:9px;color:var(--brown)}
+.cl-legend span::before{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;border:1px solid rgba(59,47,42,.4);
+  margin-right:4px;vertical-align:1px;
+}
+.cl-wrap{display:grid;grid-template-columns:1.55fr .8fr;gap:18px;align-items:start}
+.side-notes{display:flex;flex-direction:column;gap:14px}
+.side-notes .sticky{font-size:12.5px}
+.side-notes .sticky h4{
+  margin:0 0 5px;font-family:var(--round);font-size:13.5px;letter-spacing:.04em;
+  border-bottom:1px dashed rgba(140,110,79,.4);padding-bottom:4px;
+}
+.grade-list{margin:0;padding:0;list-style:none;font-family:var(--hand);font-size:11.5px;line-height:1.7}
+.grade-list li{display:flex;gap:6px}
+.grade-list li b{font-family:var(--mono);font-size:11px;color:var(--paper);background:var(--green);width:16px;height:16px;
+  display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:2px}
+.grade-list li.b b{background:var(--brown)}
+.grade-list li.c b{background:var(--brick)}
+.inspect-list{margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.9}
+.inspect-list li{display:flex;gap:6px;align-items:center;border-bottom:1px dotted rgba(140,110,79,.25)}
+.inspect-list li span.num{font-family:var(--mono);font-size:9px;color:var(--brick);min-width:12px}
+.cb{
+  width:12px;height:12px;border:1.4px solid rgba(59,47,42,.6);background:rgba(255,255,255,.6);
+  display:inline-block;position:relative;flex:0 0 auto;border-radius:1px;
+}
+.cb.on::after{
+  content:"";position:absolute;left:2px;top:2px;width:7px;height:4px;
+  border-left:1.6px solid var(--ink);border-bottom:1.6px solid var(--ink);
+  transform:rotate(-45deg);
+}
+.cb.on.red::after{border-color:var(--brick)}
+/* ---------- 6 预算 ---------- */
+.budget-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+.receipt{
+  position:relative;background:#FFFDF7;padding:26px 22px 30px;
+  font-family:var(--mono);font-size:12px;color:var(--ink);
+  box-shadow:0 0 0 3px rgba(251,247,239,.9),3px 7px 12px rgba(59,47,42,.18);
+  transform:rotate(-1deg);
+}
+.receipt::before,.receipt::after{
+  content:"";position:absolute;left:0;right:0;height:9px;
+  background-image:radial-gradient(circle at 6px -2px,transparent 7px,#FFFDF7 7.5px);
+  background-size:12px 12px;background-repeat:repeat-x;
+}
+.receipt::before{top:0;transform:rotate(180deg)}
+.receipt::after{bottom:0}
+.receipt h3{
+  margin:0 0 2px;text-align:center;font-family:var(--round);font-size:16px;letter-spacing:.12em;
+}
+.receipt .r-sub{text-align:center;font-size:9.5px;letter-spacing:.08em;color:var(--brown);margin-bottom:12px}
+.r-line{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed rgba(140,110,79,.28)}
+.r-line .r-name{font-family:var(--sans);font-size:11.5px}
+.r-line .r-note{font-family:var(--hand);font-size:10px;color:var(--brown);margin-left:6px}
+.r-line .r-val{white-space:nowrap}
+.r-total{
+  display:flex;justify-content:space-between;margin-top:12px;padding-top:8px;border-top:2px solid rgba(59,47,42,.35);
+  font-size:13px;font-weight:700;
+}
+.r-total .r-val{color:var(--brick);font-size:15px}
+.r-foot{margin-top:10px;font-size:9.5px;color:var(--brown);display:flex;justify-content:space-between;gap:10px}
+.budget-side{display:flex;flex-direction:column;gap:16px;position:relative}
+.budget-side .sticky{padding:16px 15px}
+.pricetag{
+  position:relative;display:inline-flex;align-items:center;gap:8px;background:var(--paper);
+  border:1px dashed rgba(140,110,79,.55);padding:6px 12px 6px 20px;
+  font-family:var(--mono);font-size:11px;transform:rotate(2deg);
+  box-shadow:0 0 0 3px rgba(251,247,239,.85),2px 4px 6px rgba(59,47,42,.14);
+}
+.pricetag::before{
+  content:"";position:absolute;left:7px;top:50%;transform:translateY(-50%);
+  width:6px;height:6px;border-radius:50%;border:1px solid rgba(140,110,79,.65);background:var(--paper);
+}
+.pricetag b{font-size:14px}
+/* ---------- 7 战利品 ---------- */
+.loot-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px 18px;align-items:start}
+.loot{position:relative;padding:2px 0 0;text-align:left}
+.loot .polaroid{
+  width:100%;padding:8px 8px 34px;transform:rotate(var(--rot,-2deg));
+}
+.loot .polaroid .ph{width:100%;height:128px}
+.loot .polaroid .ph span{font-size:10.5px;padding:3px 8px}
+.loot .ptag{margin-top:12px;transform:rotate(1.6deg)}
+.loot .ptag--2{margin-left:8px;transform:rotate(-2deg)}
+.loot .loot-reason{
+  margin-top:10px;font-family:var(--hand);font-size:11.5px;line-height:1.7;
+  padding-left:10px;border-left:2px dotted rgba(140,110,79,.5);
+}
+.loot .loot-reason b{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--brown);display:block}
+.loot .stamp{position:absolute;top:-6px;right:2px;width:62px;height:62px;z-index:4}
+.loot-total{
+  margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;
+  padding:12px 16px;background:rgba(255,255,255,.5);
+  border:1px dashed rgba(140,110,79,.5);transform:rotate(-.6deg);
+}
+.loot-total .lt-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--brown)}
+.loot-total .lt-formula{font-family:var(--mono);font-size:11.5px}
+.loot-total .lt-sum{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--brick);margin-left:auto}
+/* ---------- 8 砍价 ---------- */
+.rules-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px 26px}
+.rule-box{
+  position:relative;padding:14px 16px 14px 18px;background:rgba(255,255,255,.42);
+  border-left:3px solid var(--brown);box-shadow:2px 5px 9px rgba(59,47,42,.08);
+}
+.rule-box h4{margin:0 0 8px;font-family:var(--round);font-size:14px;letter-spacing:.05em;display:flex;align-items:center;gap:6px}
+.rule-box h4 .rn{
+  font-family:var(--mono);font-size:9px;background:var(--brown);color:var(--paper);padding:1px 5px;
+}
+.rule-list{margin:0;padding:0;list-style:none;font-size:11.8px;line-height:1.75}
+.rule-list li{padding-left:14px;position:relative;margin-bottom:3px}
+.rule-list li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--brown);opacity:.55}
+.rule-box.danger{border-left-color:var(--brick)}
+.rule-box.danger h4 .rn{background:var(--brick)}
+.rule-box.danger li::before{background:var(--brick)}
+.rule-box.calm{border-left-color:var(--green)}
+.rule-box.calm h4 .rn{background:var(--green)}
+.rule-box.calm li::before{background:var(--green)}
+.part-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.part-tags span{
+  font-family:var(--mono);font-size:9.5px;padding:2px 7px;background:var(--paper);
+  border:1px solid rgba(140,110,79,.35);transform:rotate(var(--rot,-1deg));
+}
+/* ---------- 9 备选 ---------- */
+.backup-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.backup{
+  position:relative;padding:16px 16px 14px;background-color:rgba(228,213,195,.5);
+  border:1px solid rgba(140,110,79,.4);
+  box-shadow:0 0 0 3px rgba(251,247,239,.85),2px 6px 10px rgba(59,47,42,.13);
+  transform:rotate(var(--rot,-1.2deg));
+}
+.backup::before{
+  content:"";position:absolute;top:-9px;left:22px;width:74px;height:20px;
+  background:rgba(74,111,165,.24);transform:rotate(-4deg);
+  clip-path:polygon(0 8%,4% 0,96% 3%,100% 92%,4% 98%);
+}
+.backup h4{margin:0 0 6px;font-family:var(--round);font-size:14.5px;display:flex;gap:8px;align-items:baseline}
+.backup h4 .bk{font-family:var(--mono);font-size:10px;background:var(--ink);color:var(--paper);padding:1px 6px}
+.backup .bk-row{display:grid;grid-template-columns:56px 1fr;gap:3px 8px;font-size:11.5px;line-height:1.65}
+.backup .bk-row dt{font-family:var(--mono);font-size:9px;color:var(--brown);letter-spacing:.03em;padding-top:2px}
+.backup .bk-row dd{margin:0}
+.backup .replace{
+  margin-top:10px;font-family:var(--hand);font-size:11.5px;color:var(--brick);line-height:1.6;
+  border-top:1px dashed rgba(140,110,79,.4);padding-top:8px;
+}
+.ending{
+  margin-top:32px;text-align:center;position:relative;padding:16px 10px 26px;
+}
+.ending .end-sticker{
+  display:inline-block;padding:12px 22px;background:var(--kraft);font-family:var(--round);
+  font-size:clamp(13px,2.2vw,17px);letter-spacing:.06em;
+  transform:rotate(-2deg);box-shadow:0 0 0 4px rgba(251,247,239,.9),3px 7px 12px rgba(59,47,42,.18);
+}
+.ending .sig{margin-top:16px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--brown);opacity:.85}
+.ending .star-dec{position:absolute;right:12%;top:2px;transform:rotate(12deg)}
+.ending .star-dec2{position:absolute;left:9%;bottom:14px;transform:rotate(-14deg)}
+.clip{position:absolute;width:16px;height:38px;border:2px solid rgba(140,110,79,.6);border-radius:9px;z-index:6}
+.clip::before{content:"";position:absolute;left:3px;top:6px;width:6px;height:24px;border:2px solid rgba(140,110,79,.45);border-radius:6px;border-top:none}
+.pin{
+  position:absolute;width:13px;height:13px;border-radius:50%;z-index:7;
+  background:radial-gradient(circle at 32% 28%,#E9C9C1,#C0523C 75%);
+  box-shadow:0 0 0 3px rgba(251,247,239,.7),1px 3px 4px rgba(59,47,42,.3);
+}
+.coffee-cup{
+  display:inline-block;vertical-align:-11px;
+  width:30px;height:34px;position:relative;flex:0 0 auto;
+  border:1.6px solid rgba(140,110,79,.7);border-top:none;border-radius:0 0 8px 8px;
+  background:rgba(255,255,255,.55);
+}
+.coffee-cup::before{content:"";position:absolute;left:-1px;right:-1px;top:-6px;height:6px;background:var(--brown);opacity:.7;border-radius:2px}
+.coffee-cup::after{content:"";position:absolute;right:-9px;top:8px;width:7px;height:11px;border:1.6px solid rgba(140,110,79,.7);border-left:none;border-radius:0 6px 6px 0}
+.small-note-inline{
+  font-family:var(--hand);font-size:11.5px;color:var(--brown);display:inline-flex;align-items:center;gap:6px;
+}
+.arrow-hand{flex:0 0 auto;opacity:.7}
+/* ---------- hover / 动效 ---------- */
+.tag,.card,.polaroid,.sticky,.note,.backup{transition:transform .35s cubic-bezier(.2,.8,.3,1)}
+.card:hover{filter:brightness(1.015)}
+.tag:hover{
+  transform:rotate(0deg) translateY(-4px);
+  box-shadow:0 0 0 3px rgba(251,247,239,.95),4px 10px 15px rgba(59,47,42,.32);
+  z-index:9;
+}
+.tag--tri:hover,.tag--flower:hover,.tag--hex:hover,.tag--star:hover{
+  filter:drop-shadow(0 0 2px rgba(251,247,239,.95)) drop-shadow(3px 8px 5px rgba(59,47,42,.34));
+}
+.polaroid:hover,.sticky:hover,.note:hover{transform:rotate(0deg) translateY(-3px)}
+.rules-wrap{position:relative}
+.backup .clip{left:16px;top:-9px;transform:rotate(-9deg)}
+.denim-patch{
+  position:relative;margin-top:2px;padding:10px 12px;display:flex;align-items:baseline;gap:8px;
+  background-color:var(--denim);
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.12) 0 2px,transparent 2px 5px);
+  border:2px dashed rgba(251,247,239,.6);
+  transform:rotate(-2deg);box-shadow:0 0 0 3px rgba(251,247,239,.9),2px 5px 8px rgba(59,47,42,.2);
+  color:#F7F2E6;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
+}
+.denim-patch b{font-size:10.5px;letter-spacing:.1em}
+.denim-patch i{font-style:normal;margin-left:auto;font-family:var(--hand);font-size:11.5px;letter-spacing:0;color:#EFE7D3}
+.moon{
+  display:inline-block;width:26px;height:26px;border-radius:50%;
+  background:radial-gradient(circle at 71% 27%,rgba(251,247,239,0) 0 55%,var(--brown) 56%);
+  transform:rotate(-16deg);opacity:.85;
+  filter:drop-shadow(0 0 1.4px rgba(251,247,239,.95)) drop-shadow(1px 2px 2px rgba(59,47,42,.22));
+}
+.stitch{stroke-dasharray:7 6;animation:stitch 6s linear infinite}
+@keyframes stitch{to{stroke-dashoffset:-130}}
+.tape{animation:tape-settle .9s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes tape-settle{from{opacity:0;transform:rotate(-8deg) translateY(-8px)}to{opacity:.92}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+/* ---------- 移动端 375 ---------- */
+@media (max-width:900px){
+  .route{grid-template-columns:1fr;}
+  .metro-jump{flex-direction:row;padding:6px 0}
+  .metro-jump .dash{width:auto;height:0;border-left:none;border-top:2px dashed rgba(74,111,165,.55);min-height:0}
+  .map{min-height:0}
+  .cl-wrap,.budget-wrap,.rules-wrap,.backup-wrap{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .cardwrap:nth-child(2n){margin-top:0}
+  .stop{grid-template-columns:88px 1fr;gap:4px 10px}
+  .stop .st-dur{grid-column:1 / span 2;justify-self:start;font-size:9.5px}
+  .stop .st-note{grid-column:1 / span 2}
+  .cl-row{grid-template-columns:14px 1fr auto;gap:4px 8px;padding:9px 4px}
+  .cl-row .cb{grid-column:1;grid-row:1}
+  .cl-row .cl-name{grid-column:2;grid-row:1}
+  .cl-row .cl-price{grid-column:3;grid-row:1;justify-self:end}
+  .cl-row .cl-size{grid-column:2;grid-row:2}
+  .cl-row .cl-grade{grid-column:3;grid-row:2;justify-self:end}
+  .cl-row .dots{grid-column:2 / span 2;grid-row:3;margin-top:2px}
+  .cl-row .cl-flag{display:none}
+}
+@media (max-width:560px){
+  body{padding:0}
+  .sheet{padding:18px 13px 34px;border-radius:0;box-shadow:none}
+  .masthead{padding:14px 2px 24px}
+  .title-sticker{padding:14px 16px 12px;transform:rotate(-2deg)}
+  .subline{font-size:10.5px;gap:0}
+  .subline i{padding:0 5px}
+  .corner.tr,.corner.br{right:0}
+  .corner.bl{left:0}
+  .sec{margin-top:34px}
+  .sec-head h2{font-size:19px}
+  .sec-head .sec-tip{display:none}
+  .ug-block{width:33%;padding:6px 4px}
+  .ug-block .blk-name{font-size:9.5px}
+  .ug-link{max-width:18px}
+  .ug-row{gap:0}
+  .map{padding:30px 8px 14px}
+  .map-note{position:static;max-width:none;font-size:10.5px;padding:8px 9px;margin:9px 2px 0;transform:rotate(-1.4deg)}
+  .map-footnote{position:static;max-width:none;margin:10px 2px 0;font-size:10px;transform:none}
+  .ug-return span{display:none}
+  .title-sticker{padding:13px 12px 11px}
+  h1{font-size:clamp(19px,5.6vw,24px)}
+  .no-tag{font-size:9px;letter-spacing:.06em}
+  .street{aspect-ratio:1/1.05}
+  .street .node em{font-size:9px}
+  .tag--sm{width:34px;height:34px;font-size:11px}
+  .tag--sm.tag--tri{width:38px;height:34px}
+  .tag--sm.tag--flower,.tag--sm.tag--star{width:36px;height:36px}
+  .tag--sm.tag--hex{width:36px;height:34px}
+  .tag--sm.tag--long{width:60px;height:26px}
+  .cards{gap:22px}
+  .card{padding:15px 13px 13px}
+  .kv{grid-template-columns:58px 1fr}
+  .loot-wrap{grid-template-columns:1fr 1fr;gap:16px 12px}
+  .loot .polaroid .ph{height:92px}
+  .loot .stamp{width:50px;height:50px;font-size:7px;right:-2px}
+  .receipt{padding:22px 14px 26px}
+  .r-line .r-note{display:none}
+  .cl-row{grid-template-columns:14px 1fr 64px}
+  .stop{padding-left:0}
+  .timeline{padding-left:28px}
+  .timeline::before{left:8px}
+  .phase-head::before{left:-24px;width:10px;height:10px}
+  .coffee-seal{width:48px;height:48px;font-size:8px}
+  .ticket{width:64px;font-size:8.5px}
+}
+</style>
+<style id="iter-style">
+/* ================= 本轮迭代补丁（B/C/D）——独立样式块，删除即回滚 ================= */
+
+/* ---------- B2 左图底部：脚注与便签改文档流并排 ---------- */
+.map-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;flex-wrap:wrap}
+.map-foot .map-footnote{position:static;max-width:none;flex:1 1 190px;margin:0}
+.map-foot .map-note{position:static;max-width:180px}
+
+/* ---------- B1a 地下城货架剖面 ---------- */
+.shelf-chart{
+  margin-top:16px;position:relative;z-index:2;
+  border:1px dashed rgba(140,110,79,.5);background:rgba(255,255,255,.42);
+  padding:10px 12px 8px;transform:rotate(var(--rot,0deg));
+  box-shadow:2px 3px 6px rgba(59,47,42,.08);
+}
+.shelf-title{display:block;font-family:var(--hand);font-size:11.5px;color:var(--brown);margin-bottom:6px;transform:rotate(-.5deg)}
+.shelf-bars{display:flex;align-items:flex-end;justify-content:space-around;gap:14px;height:96px;padding:0 6px}
+.shelf-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100%}
+.shelf-bar{
+  width:100%;max-width:64px;height:var(--h,40%);
+  border:1.5px solid rgba(140,110,79,.6);
+  background:repeating-linear-gradient(0deg,rgba(228,213,195,.9) 0 4px,rgba(255,255,255,.55) 4px 8px);
+  box-shadow:inset 0 0 0 1.5px rgba(251,247,239,.6),2px 2px 0 rgba(59,47,42,.08);
+}
+.shelf-price{font-size:9.5px;color:var(--ink)}
+.shelf-arrow{display:flex;align-items:center;gap:6px;margin-top:8px}
+.sa-cap{font-family:var(--hand);font-size:10px;color:var(--brown);background:var(--paper);border:1px dashed rgba(140,110,79,.5);padding:0 6px;transform:rotate(-1deg);white-space:nowrap}
+.sa-line{flex:1;border-top:1.6px dashed rgba(140,110,79,.65);position:relative}
+.sa-line::after{content:"";position:absolute;right:-1px;top:-5px;border:5px solid transparent;border-left-color:rgba(140,110,79,.75)}
+
+/* ---------- B1b 步行互通环条（原空虚线框改造） ---------- */
+.loop-strip{
+  margin-top:12px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  border:1.5px dashed rgba(63,93,80,.6);border-left:4px solid rgba(63,93,80,.45);border-right:4px solid rgba(63,93,80,.45);
+  background:rgba(63,93,80,.07);padding:7px 12px;transform:rotate(var(--rot,0deg));
+}
+.loop-name{font-family:var(--hand);font-size:12px;color:var(--green);font-weight:700}
+.loop-ring{font-size:11px;color:var(--green);border:1px dashed rgba(63,93,80,.5);padding:1px 8px;background:rgba(251,247,239,.8)}
+.loop-tip{font-family:var(--hand);font-size:10.5px;color:var(--brown)}
+.warn-ico{font-style:normal;color:var(--brick)}
+
+/* ---------- D5 缝线上的步行分钟小纸片 ---------- */
+.min-chip{
+  position:absolute;font-style:normal;font-family:var(--hand);font-size:9.5px;color:var(--brown);
+  background:var(--paper);border:1px dashed rgba(140,110,79,.55);padding:0 5px;line-height:1.55;
+  white-space:nowrap;transform:rotate(var(--rot,0deg));
+  box-shadow:1px 1px 3px rgba(59,47,42,.14);z-index:3;
+}
+.ug-link .min-chip{left:50%;top:50%;transform:translate(-50%,-50%) rotate(var(--rot,0deg))}
+
+/* ---------- B5 右图街道线桌面端自适应拉满 ---------- */
+@media (min-width:901px){
+  .map--old{display:flex;flex-direction:column}
+  .map--old .street{flex:1 1 auto;aspect-ratio:auto;min-height:246px}
+}
+
+/* ---------- B4 图例文字说明项去掉多画的圆点 ---------- */
+.cl-legend span.plain::before{content:none!important}
+
+/* ---------- D1 热点：键盘可达 + 高亮闪烁 ---------- */
+.js-hot{cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent}
+.js-hot:focus-visible{box-shadow:0 0 0 3px rgba(255,228,77,.95),2px 6px 10px rgba(59,47,42,.3)!important}
+.js-hot.is-hot{transform:rotate(0deg) scale(1.12)!important;box-shadow:0 0 0 3px rgba(255,228,77,.95),4px 10px 15px rgba(59,47,42,.32)!important;z-index:9}
+.card.cardflash{animation:cardflash 1.6s ease-out 1}
+@keyframes cardflash{
+  0%,55%{box-shadow:inset 0 0 0 4px rgba(255,228,77,.95),inset 0 0 34px rgba(255,228,77,.5)}
+  100%{box-shadow:inset 0 0 0 0 rgba(255,228,77,0)}
+}
+.cardwrap{scroll-margin-top:16px}
+
+/* ---------- D2 勾选框与工具条 ---------- */
+.js-cb{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.js-cb:focus-visible{outline:2px dashed #C0523C;outline-offset:2px}
+.cl-toolbar{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  margin:0 0 10px;padding:6px 10px;border:1.5px dashed rgba(140,110,79,.45);
+  background:rgba(255,255,255,.45);transform:rotate(-.4deg);
+}
+.cl-count{font-family:var(--hand);font-size:12.5px;color:var(--brown)}
+.cl-count b{font-family:var(--mono);color:var(--brick);font-size:14px}
+.cl-reset{
+  font-family:var(--hand);font-size:11.5px;color:var(--brown);cursor:pointer;
+  background:rgba(251,247,239,.9);border:1.5px dashed rgba(140,110,79,.55);
+  padding:3px 10px;transform:rotate(1.2deg);box-shadow:1px 2px 4px rgba(59,47,42,.12);
+}
+.cl-reset:hover{color:var(--brick);border-color:rgba(192,82,60,.6);transform:rotate(0deg)}
+.cl-reset:focus-visible{outline:2px dashed #C0523C;outline-offset:2px}
+
+/* ---------- D3 预算构成堆叠条 + 已花进度条 ---------- */
+.budget-bar-block{
+  margin:0 0 18px;padding:14px 16px 12px;position:relative;
+  border:1px solid rgba(140,110,79,.35);background:rgba(255,255,255,.4);
+  box-shadow:inset 0 0 0 4px rgba(251,247,239,.55),2px 4px 8px rgba(59,47,42,.08);
+}
+.bb-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.bb-head b{font-family:var(--round);font-size:15px;letter-spacing:.04em}
+.bb-head span{font-family:var(--hand);font-size:11px;color:var(--brown);transform:rotate(-1deg)}
+.budget-bar{display:flex;height:30px;border:1px dashed rgba(59,47,42,.4);padding:2px;gap:2px;background:rgba(251,247,239,.6)}
+.bb-seg{flex:var(--w) 1 0%;min-width:7px;display:block}
+.bb-seg i{display:block;height:100%;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.38) 0 3px,rgba(255,255,255,0) 3px 6px)}
+.bb-traffic{background:#4A6FA5}
+.bb-food{background:#D9A441}
+.bb-alter{background:#3F5D50}
+.bb-shop{background:#C0523C;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.45)}
+.bb-other{background:#8C6E4F}
+.bb-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:9px}
+.bl-item{font-family:var(--hand);font-size:11.5px;color:var(--ink);display:inline-flex;align-items:center;gap:5px}
+.bl-dot{width:9px;height:9px;border:1px solid rgba(59,47,42,.4);display:inline-block;transform:rotate(-3deg);flex:0 0 auto}
+.spend-track{
+  margin-top:12px;position:relative;height:22px;
+  border:1.5px dashed rgba(140,110,79,.5);
+  background:repeating-linear-gradient(45deg,rgba(228,213,195,.35) 0 8px,transparent 8px 16px);
+}
+.spend-fill{
+  position:absolute;left:0;top:0;bottom:0;width:var(--p,38%);
+  background:linear-gradient(180deg,rgba(192,82,60,.26),rgba(192,82,60,.55));
+  border-right:2px dashed rgba(192,82,60,.9);
+}
+.spend-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-family:var(--hand);font-size:11.5px;color:var(--ink);background:rgba(251,247,239,.88);padding:0 6px;white-space:nowrap}
+.spend-label b{color:var(--brick)}
+
+/* ---------- D4 捡漏概率贴纸行 ---------- */
+.odd-row{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:fit-content;max-width:100%;
+  margin:8px 0 10px;padding:5px 9px;transform:rotate(-.4deg);
+  border:1.5px dashed rgba(140,110,79,.45);background:rgba(228,213,195,.28);
+}
+.odd-num{font-family:var(--hand);font-size:11px;color:var(--brown);letter-spacing:.05em}
+.odd-dots{display:inline-flex;align-items:center;gap:6px}
+.odd-dots i{width:13px;height:13px;border-radius:50%;border:1.6px solid rgba(140,110,79,.65);background:rgba(255,255,255,.6);display:inline-block;box-shadow:inset 0 0 0 1.5px rgba(251,247,239,.7);flex:0 0 auto}
+.odd-dots i.on{background:var(--brick);border-color:rgba(140,62,45,.8)}
+.odd-dots i.half{background:linear-gradient(90deg,var(--brick) 52%,rgba(255,255,255,.6) 52%)}
+.odd-pct{font-family:var(--mono);font-size:10.5px;color:var(--brown)}
+.odd-row .coffee-cup{width:17px;height:20px;flex:0 0 auto}
+.odd-row .coffee-cup::after{right:-6px;top:5px;width:4px;height:6px}
+.odd-row .coffee-cup+.coffee-cup{margin-left:9px}
+
+/* ---------- D6 复盘三问便签 ---------- */
+.review-note{
+  display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin:10px 0 2px;padding:7px 10px;
+  border:1.5px dashed rgba(140,110,79,.5);background:rgba(255,228,77,.14);
+  transform:rotate(var(--rot,-1deg));
+}
+.review-note b{font-family:var(--round);font-size:12.5px;color:var(--brown);flex:0 0 auto}
+.review-note span{font-family:var(--hand);font-size:12px;color:var(--ink);line-height:1.6}
+
+/* ---------- D7 可撕抄作业便签 + 打印提示 ---------- */
+.tearoff{
+  position:relative;margin:30px auto 6px;max-width:640px;padding:14px 18px 12px;
+  border:1.5px dashed rgba(140,110,79,.55);background:rgba(255,255,255,.55);
+  transform:rotate(var(--rot,-.7deg));
+}
+.tear-scissor{display:flex;align-items:center;gap:8px;margin:-30px 0 10px -6px}
+.tear-scissor i{font-style:normal;font-family:var(--hand);font-size:10.5px;color:var(--brown);background:var(--paper);padding:0 6px;transform:rotate(-1deg)}
+.tear-body b{font-family:var(--round);font-size:15px;display:block;margin-bottom:4px}
+.tear-body p{margin:0;font-family:var(--hand);font-size:14px;line-height:1.8;color:var(--ink)}
+.tear-meta{display:block;margin-top:8px;font-family:var(--mono);font-size:9.5px;color:var(--brown);letter-spacing:.08em}
+.print-hint{text-align:center;font-family:var(--mono);font-size:10px;color:var(--brown);letter-spacing:.18em;margin:14px 0 0;opacity:.8}
+
+/* ---------- D8 今日放弃清单 ---------- */
+.giveup{
+  position:relative;margin-top:18px;padding:14px 16px 12px;transform:rotate(var(--rot,.5deg));
+  border:1.5px solid rgba(192,82,60,.4);background:rgba(192,82,60,.05);
+}
+.g-stamp{
+  position:absolute;right:14px;top:-14px;width:64px;height:64px;border:2px solid rgba(192,82,60,.7);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:rgba(192,82,60,.85);font-family:var(--round);font-size:15px;
+  transform:rotate(-12deg);background:rgba(251,247,239,.72);z-index:2;
+}
+.g-stamp span{font-family:var(--mono);font-size:6.5px;letter-spacing:.1em;margin-top:1px}
+.g-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px;padding-right:70px}
+.g-head b{font-family:var(--round);font-size:15px;color:var(--brick)}
+.g-head span{font-family:var(--hand);font-size:11px;color:var(--brown);transform:rotate(-1deg)}
+.g-item{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding:5px 2px;border-bottom:1px dotted rgba(140,110,79,.35);font-size:12.5px}
+.g-name{font-weight:600;text-decoration:line-through;text-decoration-color:rgba(192,82,60,.75);text-decoration-thickness:2px}
+.g-why{font-family:var(--hand);font-size:11.5px;color:var(--brown)}
+.g-foot{margin:8px 0 0;font-family:var(--hand);font-size:11px;color:var(--brown);transform:rotate(-.8deg)}
+
+/* ---------- 滚动入场（JS 加 js-anim 才生效；带三重兜底） ---------- */
+.js-anim .sec{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.8,.3,1)}
+.js-anim .sec.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js-anim .sec{opacity:1;transform:none;transition:none}
+  .card.cardflash{animation:none}
+}
+
+/* ---------- 小屏适配（≤560：B3 页眉四角 + 新组件紧凑化） ---------- */
+@media (max-width:560px){
+  .masthead{padding-top:46px}
+  .masthead .corner{opacity:.42}
+  .corner.tl{width:86px!important;top:-6px;left:-14px}
+  .corner.tr{transform:scale(.7);transform-origin:top right;right:-8px}
+  .corner.bl{transform:scale(.72);left:-4px}
+  .corner.br{width:70px!important;right:-14px;bottom:2px}
+  .kicker,.title-sticker,.subline,.teachers-line,.no-tag{position:relative;z-index:5}
+
+  .shelf-bars{height:74px;gap:8px}
+  .shelf-bar{max-width:54px}
+  .shelf-chart{padding:8px 9px 7px}
+  .loop-strip{gap:6px;padding:6px 8px}
+  .loop-ring{font-size:10px}
+  .map-foot{flex-direction:column;align-items:flex-start;gap:8px}
+  .map-foot .map-note{max-width:none}
+
+  .budget-bar{height:24px}
+  .bb-head b{font-size:14px}
+  .bb-legend{gap:4px 10px}
+  .bl-item{font-size:10.5px}
+  .spend-label{font-size:10px;right:6px}
+
+  .tearoff{padding:12px 12px 10px}
+  .tear-body p{font-size:13px}
+  .g-stamp{width:56px;height:56px;top:-12px;right:10px;font-size:13px}
+  .g-head{padding-right:60px}
+}
+
+/* ---------- C2 A4 打印 / 存 PDF ---------- */
+@page{size:A4 portrait;margin:12mm}
+@media print{
+  body{background:none!important;margin:0!important;padding:0!important}
+  .sheet{max-width:none;width:100%;margin:0;padding:0;border-radius:0;box-shadow:none;background:transparent}
+  .page-pad{padding:0!important}
+  .sec,.card,.receipt,.rule-box,.budget-bar-block,.backup,.loot,.giveup,.tearoff,.sticky,.note,.map,.countdown,.loot-total{break-inside:avoid;page-break-inside:avoid}
+  .cl-row,.odd-row,.review-note,.g-item,.r-line{break-inside:avoid;page-break-inside:avoid}
+  .cl-toolbar{display:none!important}
+  .print-hint{display:block!important}
+  .js-anim .sec{opacity:1!important;transform:none!important;transition:none!important}
+  .tag,.card,.polaroid,.sticky,.note,.backup{transition:none!important}
+  .tape,.stitch,.timeline::before{animation:none!important}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="page-pad">
+
+  <!-- ============ 1 标题区 ============ -->
+  <header class="masthead">
+    <span class="tape tape--hi corner tl" style="width:128px;transform:rotate(-16deg)"></span>
+    <div class="corner tr"><div class="btn-sticker"></div></div>
+    <div class="corner bl"><div class="star-dec"></div></div>
+    <span class="tape tape--brown corner br" style="width:92px;transform:rotate(8deg)"></span>
+    <div class="kicker">FIELD NOTE / WUHAN / ONE DAY / VOL.01</div>
+    <div class="title-sticker"><h1>武汉一日双线古着捡漏路线图</h1></div>
+    <div class="subline">
+      <span>10/24 周六</span><i>·</i><span>晴 18–24°C</span><i>·</i><span>预算上限 ¥1000</span><i>·</i><span>目标风格 美式+日系</span><i>·</i><span>同行 2 人</span>
+    </div>
+    <div class="teachers-line">— <span class="hl--line">地下城是体力活，老洋房是眼力活</span> —</div>
+    <div class="no-tag" style="margin-top:20px">NO. 01 / 11 段行程 · 8 个编号站 · 1 条地铁跳线</div>
+  </header>
+
+  <!-- ============ 2 路线总览 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">02</span>
+      <h2>路线总览 · 两张图一条胶带</h2>
+      <span class="sec-en">ROUTE MAP</span>
+      <span class="sec-tip">A 段靠体力，B 段靠眼力</span>
+    </div>
+
+    <div class="route">
+      <span class="tape tape--green join-tape" style="top:-12px;left:9%;width:64%;height:26px;transform:rotate(-1.4deg);z-index:8"></span>
+
+      <!-- 左图：地下城 -->
+      <div class="map map--ug">
+        <span class="map-tab">A / 地下城 · 硚口</span>
+        <div class="ug-row">
+          <div class="ug-block" style="--rot:-1.2deg">
+            <span class="tag tag--sm tag--circle" style="--tc:#4A6FA5">01</span>
+            <span class="blk-name">美奇国际广场 B1</span>
+            <span class="blk-meta">10:30–19:30</span>
+          </div>
+          <div class="ug-link"><i class="min-chip" style="--rot:-2deg">8 min</i></div>
+          <div class="ug-block" style="--rot:.8deg">
+            <span class="tag tag--sm tag--square" style="--tc:#4A6FA5">02</span>
+            <span class="blk-name">人信·武胜里 B1</span>
+            <span class="blk-meta">10:30–20:00</span>
+          </div>
+          <div class="ug-link"><i class="min-chip" style="--rot:1.6deg">5 min</i></div>
+          <div class="ug-block" style="--rot:-.6deg">
+            <span class="tag tag--sm tag--tri" style="--tc:#4A6FA5">03</span>
+            <span class="blk-name">1828 地下城</span>
+            <span class="blk-meta">备选 · 可跳过</span>
+          </div>
+        </div>
+        <div class="shelf-chart" style="--rot:-.7deg">
+          <span class="shelf-title">地下城货架剖面 · 堆得越高越便宜</span>
+          <div class="shelf-bars">
+            <div class="shelf-col">
+              <div class="shelf-bar" style="--h:24%"></div>
+              <span class="shelf-price mono">¥50–80</span>
+            </div>
+            <div class="shelf-col">
+              <div class="shelf-bar" style="--h:52%"></div>
+              <span class="shelf-price mono">¥30–50</span>
+            </div>
+            <div class="shelf-col">
+              <div class="shelf-bar" style="--h:88%"></div>
+              <span class="shelf-price mono">¥20–30</span>
+            </div>
+          </div>
+          <div class="shelf-arrow">
+            <span class="sa-cap">扶梯口</span>
+            <span class="sa-line"></span>
+            <span class="sa-cap">最里面</span>
+          </div>
+        </div>
+        <div class="loop-strip" style="--rot:.5deg">
+          <span class="loop-name">步行互通环 · 不出地面</span>
+          <span class="loop-ring mono">01 ↔ 02 ↔ 03</span>
+          <span class="loop-tip">任一家关门 → 顺延下一家 <i class="warn-ico">⚠</i></span>
+        </div>
+        <div class="map-foot">
+          <p class="map-footnote">↓ 地铁 1 号线 硚口路站，步行 6 分钟下 B1，先到 01</p>
+          <div class="sticky map-note" style="--rot:-3deg">
+            三城互通，不出地面<br>
+            <span class="mono" style="font-size:9px">01→02 步行 8 min / 02→03 步行 5 min</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 中间：地铁跳线 -->
+      <div class="metro-jump">
+        <div class="dash"></div>
+        <div class="coffee-seal" style="position:relative;left:auto;bottom:auto;transform:rotate(-5deg);margin:0 auto">
+          <b>04</b>
+          <span>咖啡<br>复盘 13:40</span>
+        </div>
+        <div class="dash"></div>
+        <div class="ticket">
+          <b>METRO</b>
+          <span>硚口 → 江汉路</span>
+          <div class="tick-line"></div>
+          <span>约 22 分钟</span>
+          <div class="tick-line"></div>
+          <span>¥3 / 人 × 2</span>
+        </div>
+        <div class="dash"></div>
+      </div>
+
+      <!-- 右图：老城区 -->
+      <div class="map map--old">
+        <span class="map-tab">B / 老城区 · 江汉路—黎黄陂路</span>
+        <div class="street">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="none" aria-hidden="true">
+            <path class="stitch" fill="none" stroke="#8C6E4F" stroke-width="1.7" stroke-linecap="round"
+              d="M24 198 C 44 190, 62 172, 82 164 C 102 156, 112 160, 128 150 C 146 140, 146 132, 163 120 C 186 104, 190 92, 205 86 C 230 76, 240 56, 256 46 C 264 41, 268 38, 276 32"/>
+          </svg>
+          <i class="min-chip min-chip--street" style="left:19%;top:69%;--rot:-2deg">4 min</i>
+          <i class="min-chip min-chip--street" style="left:41%;top:54%;--rot:1.5deg">3 min</i>
+          <i class="min-chip min-chip--street" style="left:60%;top:37%;--rot:-1deg">3 min</i>
+          <div class="node" style="left:8%;top:77%">
+            <span class="tag tag--sm tag--long" style="--tc:#3F5D50">05</span>
+            <em>古着巷</em>
+          </div>
+          <div class="node" style="left:30%;top:62%">
+            <span class="tag tag--sm tag--hex" style="--tc:#3F5D50">06</span>
+            <em>黎黄陂路</em>
+          </div>
+          <div class="node" style="left:51%;top:47%">
+            <span class="tag tag--sm tag--star" style="--tc:#8C6E4F">07</span>
+            <em>同兴里</em>
+          </div>
+          <div class="node" style="left:69%;top:29%">
+            <span class="tag tag--sm tag--flower" style="--tc:#3F5D50">08</span>
+            <em>泰兴里</em>
+          </div>
+          <div class="node star-node" style="left:86%;top:13%">
+            <span class="star-dec star-dec--brown"></span>
+            <em>咖啡收尾</em>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-route-caption">
+      <div class="cmp cmp--ug">
+        <b>地下城 = 体力活</b>
+        弯腰翻堆、按堆论价，10:30 进门直奔最里面那堆；越往里越便宜，90 分钟翻完三堆就撤。
+      </div>
+      <div class="cmp cmp--old">
+        <b>老洋房 = 眼力活</b>
+        单件少、质感高，先摸肩线与内衬再问价；同一条巷连排比价，宁缺勿滥，17:20 前收手。
+      </div>
+      <div class="stamp-inline"><b>双线</b>10/24<span>已核</span></div>
+      <span class="pin" style="position:relative;width:12px;height:12px"></span>
+    </div>
+  </section>
+
+  <!-- ============ 3 时间轴 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">03</span>
+      <h2>时间轴 · 三段式排到分钟</h2>
+      <span class="sec-en">TIMELINE</span>
+      <span class="sec-tip">每站拆成 停留 / 试穿 / 移动</span>
+    </div>
+
+    <div class="timeline">
+      <div class="phase phase--am">
+        <div class="phase-head">上午 · 地下城硬翻 <span class="ph-time">10:20–13:00</span></div>
+        <div class="stop">
+          <span class="st-time">10:20</span>
+          <span class="st-name"><b>地铁站 A 口集合</b> · 2 人碰头，先分钱：各带 ¥290 现金（共 ¥580 = ¥500 衣服 + ¥80 改衣）</span>
+          <span class="st-dur"><i>停留 <u>10</u></i><i>试穿 <u>0</u></i><i>移动 <u>0</u></i></span>
+        </div>
+        <div class="stop">
+          <span class="st-time">10:30–12:00</span>
+          <span class="st-name"><b>01 美奇 B1</b> · 先翻最里面角落，再回头看收银台边</span>
+          <span class="st-dur"><i>停留 <u>90</u></i><i>试穿 <u>25</u></i><i>移动 <u>10</u></i></span>
+          <span class="st-note">11:00 前试衣不用排；12:00 后收银排 5–8 人，提前结账</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">12:00–13:00</span>
+          <span class="st-name"><b>02 武胜里 B1</b> · 只挑韩产/法产，日牌重复不补</span>
+          <span class="st-dur"><i>停留 <u>60</u></i><i>试穿 <u>15</u></i><i>移动 <u>8</u></i></span>
+          <span class="st-note">试衣间只有 1 间，先把 3 件候选挂门把上再排</span>
+        </div>
+      </div>
+
+      <div class="phase phase--noon">
+        <div class="phase-head">中午 · 补一站 + 出地面 <span class="ph-time">13:00–15:00</span></div>
+        <div class="stop is-skip">
+          <span class="st-time">13:00–13:40</span>
+          <span class="st-name"><b>03 1828 地下城</b> · 备选站，翻不够才去</span>
+          <span class="st-dur"><i>停留 <u>40</u></i><i>试穿 <u>10</u></i><i>移动 <u>5</u></i></span>
+          <span class="st-note">12:50 还没买到 2 件就跳过，直接上楼喝咖啡</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">13:40–14:30</span>
+          <span class="st-name"><b>04 咖啡 · 简餐</b> · 复盘 + 补货清单</span>
+          <span class="st-dur"><i>停留 <u>50</u></i><i>试穿 <u>0</u></i><i>移动 <u>3</u></i></span>
+          <span class="st-note">拿铁 ¥28 / 简餐 ¥35；窗边光验内衬、拍战利品</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">14:30–15:00</span>
+          <span class="st-name"><b>地铁跳线</b> · 硚口 → 江汉路（1 号线直达），2 人 ¥6</span>
+          <span class="st-dur"><i>停留 <u>0</u></i><i>试穿 <u>0</u></i><i>移动 <u>30</u></i></span>
+          <span class="st-note">14:30 进站，14:52 出站，留 8 分钟走到巷口</span>
+        </div>
+      </div>
+
+      <div class="phase phase--pm">
+        <div class="phase-head">下午 · 老洋房慢挑 <span class="ph-time">15:00–18:00</span></div>
+        <div class="stop">
+          <span class="st-time">15:00–16:30</span>
+          <span class="st-name"><b>05 江汉路古着巷</b> · 先扫巷口三家看货品结构</span>
+          <span class="st-dur"><i>停留 <u>90</u></i><i>试穿 <u>20</u></i><i>移动 <u>9</u></i></span>
+          <span class="st-note">16:30 学生放学，收银开始排 4–6 人，16:20 前结账</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">16:30–16:50</span>
+          <span class="st-name"><b>06 黎黄陂路 · 老洋房独栋</b> · 只看肩线合不合</span>
+          <span class="st-dur"><i>停留 <u>20</u></i><i>试穿 <u>6</u></i><i>移动 <u>4</u></i></span>
+          <span class="st-note">一次拿 3 件进试衣间，别来回跑</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">16:50–17:10</span>
+          <span class="st-name"><b>07 同兴里 · 连排比价</b> · 同款隔两家问一次</span>
+          <span class="st-dur"><i>停留 <u>20</u></i><i>试穿 <u>4</u></i><i>移动 <u>3</u></i></span>
+          <span class="st-note">17:00 后陆续收摊，17:20 是死线</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">17:10–17:30</span>
+          <span class="st-name"><b>08 泰兴里 · 精品慢挑</b> · 只买一件，先问没挂出来的</span>
+          <span class="st-dur"><i>停留 <u>20</u></i><i>试穿 <u>6</u></i><i>移动 <u>3</u></i></span>
+          <span class="st-note">18:00 打烊；17:55 之后再喜欢也不进</span>
+        </div>
+        <div class="stop">
+          <span class="st-time">17:30–18:00</span>
+          <span class="st-name"><b>改衣 / 清洗 + 咖啡收尾</b> · 腰围改小、领口清洗下单</span>
+          <span class="st-dur"><i>停留 <u>30</u></i><i>试穿 <u>0</u></i><i>移动 <u>6</u></i></span>
+          <span class="st-note">改腰围 ¥25–40 / 清洗 ¥30–60，取件约 2 天后的下午</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="countdown">
+      <span class="cd-label">打烊 / 末班车</span>
+      <p><b>18:00</b> 泰兴里打烊 · <b>19:00</b> 改衣店关门 · 末班车 <b>23:10</b>（江汉路 往光谷方向）</p>
+      <span class="red-note">以当日站内公告为准；17:30 一定在改衣店门口</span>
+      <span class="pin" style="right:6px;top:-7px"></span>
+    </div>
+  </section>
+
+  <!-- ============ 4 店铺卡片 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">04</span>
+      <h2>八张店铺便签 · 一家一条命</h2>
+      <span class="sec-en">SHOP CARDS ×8</span>
+      <span class="sec-tip">编号与地图、时间轴 1:1 对应</span>
+    </div>
+
+    <div class="cards">
+
+      <!-- 01 -->
+      <div class="cardwrap" style="--rot:-1.3deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--circle" style="--tc:#4A6FA5">01</span>
+            <div class="card-title">
+              <h3>B1 日牌堆头</h3>
+              <p class="where">硚口区 · 美奇国际广场 B1｜扶梯下来右手第三排</p>
+            </div>
+            <span class="stay"><b>90</b>停留</span>
+          </div>
+          <div class="chips"><span>日系</span><span>欧产</span><span class="try">可试穿 · 布帘 2 间</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="half"></i><i></i></span><span class="odd-pct mono">3.5/5 ≈ 70%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">上衣 ¥20–50　外套 ¥50–80</dd>
+            <dt>心理价</dt><dd class="mono">上衣 ¥45　外套 ¥70（超过就走）</dd>
+            <dt>目标</dt><dd>90s 牛仔外套 · 日牌衬衫 · 羊毛开衫</dd>
+            <dt>试穿</dt><dd>可试 · 公共试衣区 2 间，11:00 后排 3–5 人</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝 · 现金｜开口 -20%，砍三轮封顶</dd>
+            <dt>客流</dt><dd>10:30–11:00 人最少；12:00 后收银排 5–8 人</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>收银台边和最里面角落那堆没人翻的日牌，越往里越便宜。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>领口污渍、内衬霉点、袖口磨破、领标是否被撕过（辨真假）。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>白炽灯 + 铁货架，开复古颗粒感滤镜。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:-3deg">
+              <div class="ph"><span>铁架第 3 堆<br>翻出 2 件</span></div>
+              <span class="cap">10.24 / B1</span>
+            </div>
+            <div class="mini-note">先翻最里面那堆，<br>再回头看门口挂杆。<br><span class="red">11:50 必须结账</span></div>
+            <div class="stamp"><b>美奇 B1</b><span>10.24</span><span>已翻</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 02 -->
+      <div class="cardwrap" style="--rot:1.1deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--square" style="--tc:#4A6FA5">02</span>
+            <div class="card-title">
+              <h3>武胜里 挂杆长店</h3>
+              <p class="where">硚口区 · 人信·武胜里 B1｜中庭扶梯口左转，整排挂杆</p>
+            </div>
+            <span class="stay"><b>60</b>停留</span>
+          </div>
+          <div class="chips"><span>日系 90%</span><span>韩产 · 法产 少量</span><span class="try">独立试衣 1 间</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="odd-pct mono">3/5 = 60%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">上衣 ¥20–30　裙子 ≈¥80</dd>
+            <dt>心理价</dt><dd class="mono">上衣 ¥25　裙子 ¥65</dd>
+            <dt>目标</dt><dd>半裙 · 连衣裙 · 针织（品质更稳，别只看便宜）</dd>
+            <dt>试穿</dt><dd>可试 · 独立试衣间 1 间，等 3–5 人</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝｜可砍，品质款只让 ¥5–10</dd>
+            <dt>客流</dt><dd>11:30 前宽松；14:00 最挤（隔壁档口换班）</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>韩产 / 法产款稀少，看到就要慢看，有溢价空间。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>裙装腰臀线与内衬；收过腰的会留双道线，翻过来看。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>暖黄灯下的一整排挂杆，横向构图。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:2.5deg">
+              <div class="ph"><span>整排挂杆<br>数到第 4 根</span></div>
+              <span class="cap">10.24 / 12:20</span>
+            </div>
+            <div class="mini-note">先量腰再挑，<br>省一半试穿时间。<br><span class="red">只补 01 没买到的品类</span></div>
+            <div class="stamp"><b>武胜里</b><span>10.24</span><span>已翻</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 03 -->
+      <div class="cardwrap" style="--rot:1.6deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--tri" style="--tc:#4A6FA5">03</span>
+            <div class="card-title">
+              <h3>1828 小体量杂货档</h3>
+              <p class="where">硚口区 · 1828 地下城｜入口窄，只有一排档口</p>
+            </div>
+            <span class="stay"><b>40</b>停留</span>
+          </div>
+          <div class="chips"><span>工装</span><span>学院风</span><span class="warn">备选站 · 可跳过</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="odd-pct mono">2/5 = 40%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">上衣 ¥15–40　无外套专柜</dd>
+            <dt>心理价</dt><dd class="mono">单件 ¥30 封顶</dd>
+            <dt>目标</dt><dd>衬衫 · 工装裤（只作补位，不为它改线）</dd>
+            <dt>试穿</dt><dd>无独立试衣间，只能套一下；穿修身背心再来</dd>
+            <dt>支付·议价</dt><dd>现金 · 微信｜默认可砍，一口价就别磨</dd>
+            <dt>客流</dt><dd>基本不排队；13:00 前后老板吃饭会拉半帘</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>体量小，翻完就结束，别指望第二圈有惊喜。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>成色波动大，慎选外套；深色衣物在暗光下看不清污渍。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>不建议拍，光线偏暗，开闪光会反白。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:-4deg">
+              <div class="ph"><span>只拍了门头<br>（暗）</span></div>
+              <span class="cap">10.24 / 13:10</span>
+            </div>
+            <div class="mini-note"><span class="red">时间不够直接跳过</span><br>省下的 40 分钟给 05 巷。</div>
+            <div class="stamp"><b>1828</b><span>10.24</span><span>备选</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 04 -->
+      <div class="cardwrap" style="--rot:-.9deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--button" style="--tc:#8C6E4F">04</span>
+            <div class="card-title">
+              <h3>出地面 · 缓冲站</h3>
+              <p class="where">硚口区 · 武胜路地面沿街｜出 B1 直走 200 米</p>
+            </div>
+            <span class="stay"><b>50</b>停留</span>
+          </div>
+          <div class="chips"><span>咖啡 · 简餐</span><span>复盘站</span><span class="try">有插座 · 有窗边桌</span></div>
+          <div class="odd-row odd-row--cup"><span class="odd-num">非捡漏站</span><span class="odd-dots"><span class="coffee-cup"></span><span class="coffee-cup"></span><span class="coffee-cup"></span></span><span class="odd-pct">复盘专用 · 不计概率</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">拿铁 ¥28　简餐 ¥35</dd>
+            <dt>心理价</dt><dd class="mono">2 人 ≤¥63（超 ¥13 从「其他」挪）</dd>
+            <dt>目标</dt><dd>整理战利品 · 砍价复盘 · 列补货清单</dd>
+            <dt>试穿</dt><dd>不试穿；借用窗边自然光翻内衬</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝｜不议价，别跟咖啡师砍</dd>
+            <dt>客流</dt><dd>13:40 到基本有位；14:10 后满座，只剩吧台</dd>
+          </dl>
+          <div class="review-note" style="--rot:-1.2deg">
+            <b>复盘三问</b>
+            <span>今天捡到了什么？花了多少？还想来吗？——写完再点单。</span>
+          </div>
+          <div class="signal"><span class="sig-key">捡漏</span>不是捡漏站，是复盘站——整理战利品、砍价复盘、补货清单。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>别在这补买「看着还行」的；暖光会骗色，深蓝看成墨绿。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>窗边木桌 + 战利品平铺，俯拍一张全景。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:1.8deg">
+              <div class="ph"><span>窗边平铺<br>上午 4 件</span></div>
+              <span class="cap">10.24 / 14:05</span>
+            </div>
+            <div class="mini-note">拿铁 ¥28 + 简餐 ¥35，<br>写下还缺：<span class="mono">半裙 / 托特包</span></div>
+            <div class="stamp"><b>复盘站</b><span>13:40</span><span>已核</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 05 -->
+      <div class="cardwrap" style="--rot:1.2deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--long" style="--tc:#3F5D50">05</span>
+            <div class="card-title">
+              <h3>江汉路 古着巷 · 连排 6–7 家</h3>
+              <p class="where">江汉区 · 江汉路步行街 巷口｜巷内 6–7 家风格各异</p>
+            </div>
+            <span class="stay"><b>90</b>停留</span>
+          </div>
+          <div class="chips"><span>美式</span><span>日系</span><span>甜酷</span><span class="try">自助挑选 + 专属搭配师</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="half"></i><i></i></span><span class="odd-pct mono">3.5/5 ≈ 70%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">上衣 ¥80–180　连衣裙 ¥120–260</dd>
+            <dt>心理价</dt><dd class="mono">上衣 ¥150　连衣裙 ¥200</dd>
+            <dt>目标</dt><dd>停产款连衣裙 · 90s 牛仔 · 包袋</dd>
+            <dt>试穿</dt><dd>多数可试 · 巷内 2 家配搭配师，先自助挑再叫人</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝｜开口 -20%，砍三轮封顶</dd>
+            <dt>客流</dt><dd>15:00 人少；16:30 学生放学变挤，收银排 4–6 人</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>巷口先看整条巷的货品结构再进店，比价心里有数。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>领标、腋下、拉链；巷口第二家已用红笔圈过两处。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>巷口纵深，人站中间别挡招牌，竖构图。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:3deg">
+              <div class="ph"><span>巷口纵深<br>光线 15:40</span></div>
+              <span class="cap">10.24 / 15:40</span>
+            </div>
+            <div class="mini-note">自带咖啡，<br>别在巷里买水。<br><span class="red">16:20 前结账</span></div>
+            <div class="stamp"><b>古着巷</b><span>10.24</span><span>已扫</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 06 -->
+      <div class="cardwrap" style="--rot:-1.7deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--hex" style="--tc:#3F5D50">06</span>
+            <div class="card-title">
+              <h3>黎黄陂路 老洋房独栋</h3>
+              <p class="where">江岸区 · 黎黄陂路 老洋房一层｜门口有信箱</p>
+            </div>
+            <span class="stay"><b>20</b>停留</span>
+          </div>
+          <div class="chips"><span>美式学院风</span><span>正装剪裁</span><span class="try">独立试衣间 · 全身镜</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i class="half"></i><i></i><i></i></span><span class="odd-pct mono">2.5/5 = 50%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">外套 ¥200–420　衬衫 ¥120–200</dd>
+            <dt>心理价</dt><dd class="mono">外套 ¥260　衬衫 ¥140</dd>
+            <dt>目标</dt><dd>羊毛西装外套 · 挺括衬衫</dd>
+            <dt>试穿</dt><dd>可试 · 一次拿 3 件，别来回跑</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝 · 刷卡｜地面片砍三轮封顶，高单价只让 10%</dd>
+            <dt>客流</dt><dd>16:30–17:00 拍照的人多，先看货再排队</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>店内数量少但单件质感最高，越旧越有味。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>肩线、袖口、扣子是否原配；换过扣子的要减价。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>洋房外墙 + 信箱 + 门牌，站着拍别蹲。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:-2deg">
+              <div class="ph"><span>外墙 + 信箱<br>16:35 顺光</span></div>
+              <span class="cap">10.24 / 16:35</span>
+            </div>
+            <div class="mini-note">先看肩线，<br>不合肩直接放回。<br><span class="red">最多只让 10%</span></div>
+            <div class="stamp"><b>黎黄陂路</b><span>10.24</span><span>已看</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 07 -->
+      <div class="cardwrap" style="--rot:1.4deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--star" style="--tc:#8C6E4F">07</span>
+            <div class="card-title">
+              <h3>同兴里 高密度古着巷</h3>
+              <p class="where">江岸区 · 同兴里 巷内连排｜一条街扫完</p>
+            </div>
+            <span class="stay"><b>20</b>停留</span>
+          </div>
+          <div class="chips"><span>工装</span><span>美式复古</span><span class="try">半数店可试 · 试衣帘</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="odd-pct mono">3/5 = 60%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">¥60–180　同款隔两家有差价</dd>
+            <dt>心理价</dt><dd class="mono">单件 ¥120 封顶</dd>
+            <dt>目标</dt><dd>工装外套 · 古着 T 恤（3 件起谈）</dd>
+            <dt>试穿</dt><dd>半数可试 · 简易试衣帘，别穿连体衣</dd>
+            <dt>支付·议价</dt><dd>现金 · 微信｜买两件一起砍，单件砍不动</dd>
+            <dt>客流</dt><dd>17:00 后陆续收摊，17:20 是死线</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>连排比价最快，同款隔两家就有差价，先问不买。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>裤脚磨损、拉链拉到底再回拉一次。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>巷内连排招牌，仰角拍能收全。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:2deg">
+              <div class="ph"><span>连排招牌<br>17:05 侧光</span></div>
+              <span class="cap">10.24 / 17:05</span>
+            </div>
+            <div class="mini-note">同款隔两家问一次价，<br>差价通常 ¥20–40。</div>
+            <div class="stamp"><b>同兴里</b><span>10.24</span><span>已扫</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 08 -->
+      <div class="cardwrap" style="--rot:-1.1deg">
+        <span class="card-ring"></span>
+        <article class="card">
+          <div class="card-top">
+            <span class="tag tag--flower" style="--tc:#3F5D50">08</span>
+            <div class="card-title">
+              <h3>泰兴里 精品慢挑小院</h3>
+              <p class="where">江岸区 · 泰兴里 老门头小院｜进门右转上木梯</p>
+            </div>
+            <span class="stay"><b>20</b>停留</span>
+          </div>
+          <div class="chips"><span>欧产</span><span>日系精品</span><span class="try">店主一对一</span></div>
+          <div class="odd-row"><span class="odd-num">捡漏概率</span><span class="odd-dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="odd-pct mono">2/5 = 40%</span></div>
+          <dl class="kv">
+            <dt>价位</dt><dd class="mono">¥120–320　单件质感最高</dd>
+            <dt>心理价</dt><dd class="mono">只买一件 · ¥150 封顶</dd>
+            <dt>目标</dt><dd>羊毛开衫 · 托特包</dd>
+            <dt>试穿</dt><dd>可试 · 店主一对一，别自己拆衣架</dd>
+            <dt>支付·议价</dt><dd>微信 · 支付宝｜明码标价，最多让 ¥10</dd>
+            <dt>客流</dt><dd>基本不等；18:00 打烊，17:55 后不再进</dd>
+          </dl>
+          <div class="signal"><span class="sig-key">捡漏</span>单件质感最高，先问一句「有没有没挂出来的」。</div>
+          <div class="signal signal--danger"><span class="sig-key">验货</span>内衬、异味；老宅潮，领口贴近闻一下再决定。</div>
+          <div class="signal signal--photo"><span class="sig-key">出片</span>老门头 + 藤蔓，逆光会糊，站侧边。</div>
+          <div class="card-foot">
+            <div class="polaroid" style="--rot:-3deg">
+              <div class="ph"><span>门头藤蔓<br>17:15 侧光</span></div>
+              <span class="cap">10.24 / 17:15</span>
+            </div>
+            <div class="mini-note">预算只剩 ¥150，<br>只挑一件，不凑单。</div>
+            <div class="stamp"><b>泰兴里</b><span>10.24</span><span>已挑</span></div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 5 捡漏清单 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">05</span>
+      <h2>九类捡漏清单 · 只买对的不买多的</h2>
+      <span class="sec-en">WISHLIST</span>
+      <span class="sec-tip">荧光黄 = 今天非买不可</span>
+    </div>
+
+    <div class="cl-wrap">
+      <div>
+        <div class="cl-toolbar">
+          <span class="cl-count">清单已勾选 <b id="clCountN">0</b> / <span id="clCountM">9</span> 类目标</span>
+          <button type="button" class="cl-reset" id="clReset">↺ 重置勾选</button>
+        </div>
+        <div class="checklist">
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name hl">工装外套</span>
+            <span class="cl-size mono">M / 肩 42 · 胸 110</span>
+            <span class="cl-price mono">≤¥150</span>
+            <span class="cl-grade"><i class="grade-badge on">A</i><i class="grade-badge b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name hl">90s 牛仔外套</span>
+            <span class="cl-size mono">M / 肩 40 · 衣长 62</span>
+            <span class="cl-price mono">≤¥150</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb on"></span>
+            <span class="cl-name hl">羊毛开衫</span>
+            <span class="cl-size mono">M / 胸 104 · 袖 58</span>
+            <span class="cl-price mono">≤¥120</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">衬衫</span>
+            <span class="cl-size mono">M / 胸 104 · 领围 39</span>
+            <span class="cl-price mono">≤¥80</span>
+            <span class="cl-grade"><i class="grade-badge on">A</i><i class="grade-badge">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">半裙</span>
+            <span class="cl-size mono">腰 66–68 · 长 68</span>
+            <span class="cl-price mono">≤¥90</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">连衣裙</span>
+            <span class="cl-size mono">S / 腰 66 · 长 110</span>
+            <span class="cl-price mono">≤¥150</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">皮衣</span>
+            <span class="cl-size mono">M / 肩 39 · 胸 106</span>
+            <span class="cl-price mono">≤¥150</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge">B</i><i class="grade-badge on c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">包袋</span>
+            <span class="cl-size mono">托特 30×35 · 提手 22</span>
+            <span class="cl-price mono">≤¥120</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="cl-row">
+            <span class="cb"></span>
+            <span class="cl-name">配饰 / 鞋</span>
+            <span class="cl-size mono">鞋 37 · 内长 23.5</span>
+            <span class="cl-price mono">≤¥40 / ≤¥150</span>
+            <span class="cl-grade"><i class="grade-badge">A</i><i class="grade-badge on b">B</i><i class="grade-badge c">C</i></span>
+            <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+
+        <div class="cl-legend">
+          <span>腋下</span><span>领口</span><span>内衬</span><span>拉链</span><span>裤脚</span><span>污渍</span><span>异味</span>
+          <span class="plain">空心＝还没查　红点＝查出瑕疵</span>
+        </div>
+        <p class="red-note" style="margin-top:12px">红点先标在「皮衣」上：裤脚 + 异味双雷，今天不碰皮衣也行</p>
+      </div>
+
+      <div class="side-notes">
+        <div class="sticky" style="--rot:2deg">
+          <h4>成色分级小贴纸</h4>
+          <ul class="grade-list">
+            <li><b>A</b>近全新，无明显瑕疵</li>
+            <li class="b"><b>B</b>有使用痕迹，但不影响上身</li>
+            <li class="c"><b>C</b>明显瑕疵需修复（破洞 / 开线 / 染色）</li>
+          </ul>
+          <p style="margin:8px 0 0;font-size:11px;color:#5C4B41">同样的价钱，A 档可以多花 ¥20，C 档必须减 ¥30 起。</p>
+        </div>
+
+        <div class="sticky" style="--rot:-1.4deg">
+          <h4>地下市场专属验货 6 项</h4>
+          <ul class="inspect-list">
+            <li><span class="num">01</span><span class="cb"></span>领标是否被撕 / 换过</li>
+            <li><span class="num">02</span><span class="cb"></span>内衬有无霉点（翻过来对光）</li>
+            <li><span class="num">03</span><span class="cb"></span>腋下有无污渍（黄圈）</li>
+            <li><span class="num">04</span><span class="cb"></span>拉链顺滑度（拉到底再回拉）</li>
+            <li><span class="num">05</span><span class="cb"></span>有无异味（领口贴近闻）</li>
+            <li><span class="num">06</span><span class="cb"></span>裤脚磨损量（对光看毛边）</li>
+          </ul>
+          <p style="margin:8px 0 0;font-size:10.5px;color:var(--brick)">※ 6 项里踩 2 项就放回，别心软。</p>
+        </div>
+
+        <div class="note" style="--rot:-2.2deg">
+          <b>重点只买 3 件</b><br>
+          工装外套 / 羊毛开衫 / 托特包，<br>
+          其余看到再记，不主动找。
+        </div>
+        <div class="denim-patch"><b>DENIM</b><span>90s 牛仔 · 只收原色</span><i>布贴</i></div>
+      </div>
+    </div>
+
+    <div class="giveup" style="--rot:.5deg">
+      <span class="g-stamp" aria-hidden="true">忍住<span>NOT TODAY</span></span>
+      <div class="g-head"><b>今日放弃清单</b><span>看到了，没买 —— 记下来才叫买手</span></div>
+      <div class="g-item"><span class="g-name">皮夹克 ¥380</span><span class="g-why">成色 C 档，内衬霉点，一票否决</span></div>
+      <div class="g-item"><span class="g-name">宽檐渔夫帽 ¥95</span><span class="g-why">版型不对，压眉骨，戴上显头大</span></div>
+      <div class="g-item"><span class="g-name">格纹半裙 ¥110</span><span class="g-why">腰围大 3cm，改腰 ¥30 不值</span></div>
+      <p class="g-foot">放弃的钱不是亏的 —— 是给下一次蹲上新的预算。</p>
+    </div>
+  </section>
+
+  <!-- ============ 6 预算 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">06</span>
+      <h2>预算小票 · 超了就停手</h2>
+      <span class="sec-en">BUDGET</span>
+      <span class="sec-tip">备用金单列，不算进购物额度</span>
+    </div>
+
+    <div class="budget-bar-block">
+      <div class="bb-head"><b>¥672 怎么构成</b><span>五段拼起来 · 段越宽花得越多</span></div>
+      <div class="budget-bar" role="img" aria-label="预算构成：购物 500 元占 74.4%，改衣清洗 80 元占 11.9%，餐饮 63 元占 9.4%，其他 17 元占 2.5%，交通 12 元占 1.8%">
+        <span class="bb-seg bb-traffic" style="--w:1.8%"><i></i></span>
+        <span class="bb-seg bb-food" style="--w:9.4%"><i></i></span>
+        <span class="bb-seg bb-alter" style="--w:11.9%"><i></i></span>
+        <span class="bb-seg bb-shop" style="--w:74.4%"><i></i></span>
+        <span class="bb-seg bb-other" style="--w:2.5%"><i></i></span>
+      </div>
+      <div class="bb-legend">
+        <span class="bl-item"><i class="bl-dot" style="background:#4A6FA5"></i>交通 ¥12 · 1.8%</span>
+        <span class="bl-item"><i class="bl-dot" style="background:#D9A441"></i>餐饮 ¥63 · 9.4%</span>
+        <span class="bl-item"><i class="bl-dot" style="background:#3F5D50"></i>改衣清洗 ¥80 · 11.9%</span>
+        <span class="bl-item"><i class="bl-dot" style="background:#C0523C"></i>购物 ¥500 · 74.4%</span>
+        <span class="bl-item"><i class="bl-dot" style="background:#8C6E4F"></i>其他 ¥17 · 2.5%</span>
+      </div>
+      <div class="spend-track">
+        <div class="spend-fill" style="--p:38%"></div>
+        <span class="spend-label">今日已花 <b>¥255</b> / ¥672 ≈ 38%</span>
+      </div>
+    </div>
+
+    <div class="budget-wrap">
+      <div class="receipt">
+        <h3>一 日 预 算 小 票</h3>
+        <div class="r-sub">10/24 · 2 人 · 币种 CNY</div>
+        <div class="r-line"><span class="r-name">交通<span class="r-note">地铁 2 人 ×2 程，单程 ¥3</span></span><span class="r-val mono">¥12</span></div>
+        <div class="r-line"><span class="r-name">餐饮<span class="r-note">拿铁 28 + 简餐 35 = 63，超 13 从「其他」挪</span></span><span class="r-val mono">¥63</span></div>
+        <div class="r-line"><span class="r-name">改衣清洗备用金<span class="r-note">改腰围 25–40 + 清洗 30–60</span></span><span class="r-val mono">¥80</span></div>
+        <div class="r-line"><span class="r-name">购物（上限）<span class="r-note">≈ 4 件，单件 ≤150</span></span><span class="r-val mono">¥500</span></div>
+        <div class="r-line"><span class="r-name">其他<span class="r-note">水 / 寄存 / 雨衣（¥30 里挪 ¥13 补餐饮）</span></span><span class="r-val mono">¥17</span></div>
+        <div class="r-total"><span>合计（上限）</span><span class="r-val mono">≤ ¥672</span></div>
+        <div class="r-foot"><span>12 + 63 + 80 + 500 + 17</span><span>NO.1024-01</span></div>
+        <p class="red-note" style="margin:10px 0 0;font-size:11px;transform:rotate(-.8deg)">
+          备用金 ¥80 没动用 → 实付 ≤¥592（12+63+500+17），¥600 这条线守得住
+        </p>
+      </div>
+
+      <div class="budget-side">
+        <div class="sticky" style="--rot:2.4deg">
+          <h4 style="margin:0 0 8px;font-family:var(--round);font-size:14px">预算守则</h4>
+          <p style="margin:0;font-family:var(--round);font-size:15px;line-height:2">
+            单件上限 <span class="mono hl">¥150</span><br>
+            全天上限 <span class="mono hl">¥600</span><br>
+            超了就停手
+          </p>
+          <p style="margin:8px 0 0;font-family:var(--hand);font-size:11.5px;color:#5C4B41">现金分两个口袋：左口袋 ¥500 只买衣服，右口袋 ¥80 只付改衣。</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <span class="pricetag">单件封顶 <b>¥150</b></span>
+          <span class="pricetag" style="transform:rotate(-2deg)">停手线 <b>¥600</b></span>
+        </div>
+        <div class="note" style="--rot:-1.8deg">
+          <b>钱怎么分</b><br>
+          ① 地铁 ¥12 + 咖啡 ¥50 先扣；<br>
+          ② 购物 ¥500 分 4 件，单件 ≤¥150；<br>
+          ③ 改衣 ¥80 单独放，¥30 留作杂费。
+        </div>
+        <div class="stamp" style="position:relative;align-self:flex-end;margin-top:2px"><b>预算审核</b><span>10.24</span><span>已核</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 战利品 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">07</span>
+      <h2>战利品记录 · 四格拍立得</h2>
+      <span class="sec-en">LOOT LOG</span>
+      <span class="sec-tip">每件都要写清「为什么值得买」</span>
+    </div>
+
+    <div class="loot-wrap">
+      <div class="loot">
+        <div class="polaroid" style="--rot:-2.4deg">
+          <div class="ph"><span>穿上身拍<br>侧面半身</span></div>
+          <span class="cap">10.24 / 战果 01</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+          <span class="ptag">入手 <b>¥120</b></span>
+          <span class="ptag">原价 ¥260</span>
+        </div>
+        <div class="loot-reason"><b>为什么值得买</b>肩线正好，袖口无磨；260 砍到 120，省 ¥140。</div>
+        <div class="stamp"><b>美奇 B1</b><span>10.24</span></div>
+      </div>
+
+      <div class="loot">
+        <div class="polaroid" style="--rot:2deg">
+          <div class="ph"><span>平铺 + 手写价签<br>一起入镜</span></div>
+          <span class="cap">10.24 / 战果 02</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+          <span class="ptag">入手 <b>¥60</b></span>
+          <span class="ptag">原价 ¥120</span>
+        </div>
+        <div class="loot-reason"><b>为什么值得买</b>材质好，无起球；只穿一次的成色。</div>
+        <div class="stamp"><b>泰兴里</b><span>10.24</span></div>
+      </div>
+
+      <div class="loot">
+        <div class="polaroid" style="--rot:-1.6deg">
+          <div class="ph"><span>托特包装满<br>当天战利品</span></div>
+          <span class="cap">10.24 / 战果 03</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+          <span class="ptag">入手 <b>¥45</b></span>
+          <span class="ptag">原价 ¥90</span>
+        </div>
+        <div class="loot-reason"><b>为什么值得买</b>这个价只剩最后一只；提手没裂，装得下 4 件。</div>
+        <div class="stamp"><b>古着巷</b><span>10.24</span></div>
+      </div>
+
+      <div class="loot">
+        <div class="polaroid" style="--rot:2.8deg">
+          <div class="ph"><span>待填：<br>给自己留一格</span></div>
+          <span class="cap">10.24 / 战果 04</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+          <span class="ptag">入手 ¥____</span>
+          <span class="ptag">原价 ¥____</span>
+        </div>
+        <div class="loot-reason"><b>为什么值得买</b>没买到就写「今天忍住没凑单」，也算战绩。</div>
+        <div class="stamp"><b>待盖章</b><span>10.24</span></div>
+      </div>
+    </div>
+
+    <div class="loot-total">
+      <span class="lt-label">今日实付</span>
+      <span class="lt-formula">¥30 古着 T 恤 3 件 + ¥45 托特包 + ¥120 工装外套 + ¥60 针织开衫</span>
+      <span class="lt-sum">= ¥255</span>
+    </div>
+    <p class="red-note" style="margin-top:10px;display:block">购物额度还剩 ¥245，但今天只买对的不买多的——剩的钱留给下次蹲上新。</p>
+  </section>
+
+  <!-- ============ 8 砍价与注意 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">08</span>
+      <h2>砍价与注意事项 · 别把漏砍成坑</h2>
+      <span class="sec-en">RULES</span>
+      <span class="sec-tip">地下可砍，地面砍三轮封顶</span>
+    </div>
+
+    <div class="rules-wrap">
+      <span class="tape tape--green" style="top:-16px;left:13%;width:112px;transform:rotate(-3deg);z-index:6"></span>
+      <span class="pin" style="right:26%;top:-9px"></span>
+      <div class="rule-box">
+        <span class="clip" style="right:16px;top:-8px;transform:rotate(8deg)"></span>
+        <h4><span class="rn">01</span>先问价，再试穿</h4>
+        <ul class="rule-list">
+          <li>进门先问「这件多少」，价不合适就别占试衣间。</li>
+          <li>试穿前把手机、钥匙从口袋掏出，避免勾线。</li>
+          <li>一次拿 3 件进试衣间，出来只留 1 件，其余归位。</li>
+        </ul>
+        <div class="part-tags">
+          <span>腋下</span><span>领口</span><span>内衬</span><span>拉链</span><span>裤脚</span><span>污渍</span><span>异味</span>
+        </div>
+      </div>
+
+      <div class="rule-box danger">
+        <h4><span class="rn">02</span>必检部位清单（7 处）</h4>
+        <ul class="rule-list">
+          <li><b>腋下</b>：对光看黄圈，深色也要翻。</li>
+          <li><b>领口 + 内衬</b>：霉点一票否决，洗不掉。</li>
+          <li><b>拉链</b>：拉到底再回拉，卡顿就是坏。</li>
+          <li><b>裤脚 / 袖口</b>：毛边超过 1cm 直接放回。</li>
+          <li><b>异味</b>：领口贴近闻，潮味晒三天也散不掉。</li>
+        </ul>
+      </div>
+
+      <div class="rule-box">
+        <h4><span class="rn">03</span>退换与消毒</h4>
+        <ul class="rule-list">
+          <li>付钱前问一句：<b>能不能退换</b>（多数古着只换不退）。</li>
+          <li>问一句：<b>是否已消毒 / 清洗过</b>，没洗的回去先泡。</li>
+          <li>让店家在票根背面写店名 + 日期，坏了有据可查。</li>
+        </ul>
+      </div>
+
+      <div class="rule-box">
+        <h4><span class="rn">04</span>议价节奏</h4>
+        <ul class="rule-list">
+          <li>地下市场：<b>默认可砍</b>，开口先 -20%，一次加 ¥5。</li>
+          <li>地面片区：<b class="red-circle">砍三轮封顶</b>，第三轮不松口就付钱或走人。</li>
+          <li>别拿「网上更便宜」压价，古着多是孤品，压不动还伤和气。</li>
+        </ul>
+        <p class="red-note" style="margin:4px 0 0">今天最多砍到第四轮，还不松口就走人。</p>
+      </div>
+
+      <div class="rule-box calm">
+        <h4><span class="rn">05</span>尺码不合 → 终点改衣</h4>
+        <ul class="rule-list">
+          <li>腰围改小 <b>¥25–40</b>，裤长改短 <b>¥15–25</b>，当天量体、两天后取。</li>
+          <li>17:30 前把要改的衣服交到改衣店，晚了排到下周。</li>
+          <li>皮衣、羊毛呢不要现场改，先问师傅能不能做。</li>
+        </ul>
+      </div>
+
+      <div class="rule-box calm">
+        <h4><span class="rn">06</span>心态提醒</h4>
+        <ul class="rule-list">
+          <li>不是每趟都能捡到，别硬凑——空手回家也是合格的一天。</li>
+          <li>预算快到时先出门透气 5 分钟，再决定要不要回头。</li>
+          <li>两个人分头翻、出口汇合，比一起挤在同一个货架快一倍。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9 备选与应急 ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-no mono">09</span>
+      <h2>备选店与应急方案</h2>
+      <span class="sec-en">PLAN B</span>
+      <span class="sec-tip">关门、下雨、没捞到，都有下家</span>
+    </div>
+
+    <div class="backup-wrap">
+      <div class="backup" style="--rot:-1.4deg">
+        <span class="clip" style="left:auto;right:18px;top:-10px;transform:rotate(-8deg)"></span>
+        <span class="tape tape--hi" style="top:-8px;right:38%;width:76px;height:22px;transform:rotate(2deg)"></span>
+        <h4><span class="bk">A</span>街道口 24h 自助古着</h4>
+        <dl class="bk-row">
+          <dt>位置</dt><dd>洪山区 · 地铁街道口 A 口，楼上自助店</dd>
+          <dt>营业</dt><dd>24 小时，无人值守，扫码进门</dd>
+          <dt>价位</dt><dd class="mono">均价 ¥30 起，明码标价不还价</dd>
+          <dt>试衣</dt><dd>独立试衣间 1 间，全程无店员交流</dd>
+          <dt>适合</dt><dd>夜场 / 不想说话 / 只想安静淘</dd>
+        </dl>
+        <p class="replace">替换条件：18:00 后还不过瘾，或白天全程不想砍价 → 直接换这条线，地铁 2 号线直达。</p>
+      </div>
+
+      <div class="backup" style="--rot:1.6deg">
+        <h4><span class="bk">B</span>硚口地下城顺延</h4>
+        <dl class="bk-row">
+          <dt>触发</dt><dd>01 / 02 / 03 任一家拉闸、临时歇业</dd>
+          <dt>动作</dt><dd>顺延到下一家，不动路线、不改时间</dd>
+          <dt>依据</dt><dd>三城互通，步行 5–8 分钟，全程不出地面</dd>
+          <dt>兜底</dt><dd>三家全关 → 直接出地面找咖啡，14:30 提前去江汉路</dd>
+        </dl>
+        <p class="replace">替换条件：任一家关门就顺延，无需改线；三家全关才启用备选 A。</p>
+      </div>
+    </div>
+    <p class="red-note" style="display:block;margin-top:12px;transform:rotate(-.8deg)">
+      关门 → 顺延下一家，不改路线；三家全关 → 才换 A 线。别为一家门关掉整天的节奏。
+    </p>
+
+    <div class="ending">
+      <span class="star-dec" style="position:absolute;right:10%;top:2px;transform:rotate(12deg)"></span>
+      <span class="star-dec star-dec--green" style="position:absolute;left:8%;bottom:20px;transform:rotate(-14deg)"></span>
+      <span class="moon" style="position:absolute;left:16%;top:6px"></span>
+      <svg width="54" height="30" viewBox="0 0 54 30" aria-hidden="true" style="position:absolute;right:21%;top:10px;opacity:.65">
+        <path d="M2 25 C 13 5, 33 4, 47 13" fill="none" stroke="#8C6E4F" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M40 7 l7 6 -9 5" fill="none" stroke="#8C6E4F" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <div class="end-sticker">今天颗粒无收没关系，明天蹲上新</div>
+      <div class="sig">地下城翻的是耐心 · 洋房挑的是眼力 · 10.24 收工</div>
+    </div>
+
+    <div class="tearoff" style="--rot:-.7deg">
+      <div class="tear-scissor" aria-hidden="true">
+        <svg width="46" height="22" viewBox="0 0 46 22"><g fill="none" stroke="#8C6E4F" stroke-width="1.5" stroke-linecap="round"><circle cx="5" cy="7" r="3.2"/><circle cx="5" cy="15" r="3.2"/><path d="M8 8.5 L34 13 M8 13.5 L34 9"/></g></svg>
+        <i>沿虚线撕下 · 转发给同行的人</i>
+      </div>
+      <div class="tear-body">
+        <b>一句话抄作业</b>
+        <p>武汉捡漏抄作业：硚口地下城翻货 + 黎黄陂路挑货，单件封顶 <span class="hl">¥150</span>，全天停手 <span class="hl">¥600</span>。</p>
+        <span class="tear-meta">NO.1024-01 · 双人版 · 10/24 周六 · 荧光笔标数字即可转发</span>
+      </div>
+    </div>
+    <p class="print-hint">· Ctrl / ⌘ + P 可存成 PDF 带走 ·</p>
+  </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  // 贴纸初始随机倾斜 -3° ~ +3°（已有手工角度的不再覆盖）
+  document.querySelectorAll('.tag,.stamp,.polaroid,.sticky,.note,.backup,.pricetag').forEach(function(el){
+    if(el.style.getPropertyValue('--rot')) return;
+    var deg = (Math.random()*4 - 2).toFixed(2);
+    el.style.setProperty('--rot', deg + 'deg');
+  });
+  // 轻微错落：卡片上下浮动
+  document.querySelectorAll('.cardwrap').forEach(function(el,i){
+    if(el.style.marginTop) return;
+    if(i % 2 === 1){
+      el.style.marginTop = (10 + Math.random()*10).toFixed(0) + 'px';
+    }
+  });
+})();
+</script>
+<script id="iter-script">
+(function(){
+  'use strict';
+  var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  /* ================= D1 编号热点 ↔ 店铺卡片 联动跳转 ================= */
+  var wraps = document.querySelectorAll('.cards .cardwrap');
+  // 给 8 张卡片挂 id：shop-01 … shop-08
+  wraps.forEach(function(wrap, i){
+    if(!wrap.id) wrap.id = 'shop-' + (i < 9 ? '0' + (i + 1) : (i + 1));
+  });
+
+  function flashCard(targetId){
+    var t = document.getElementById(targetId);
+    if(!t) return;
+    var card = t.querySelector('.card');
+    if(card && !reduced){
+      card.classList.remove('cardflash');
+      void card.offsetWidth; // 重置动画
+      card.classList.add('cardflash');
+      setTimeout(function(){ card.classList.remove('cardflash'); }, 1700);
+    }
+  }
+
+  function makeHot(el, targetId, label){
+    if(!el || el.dataset.hotBound) return;
+    el.dataset.hotBound = '1';
+    el.classList.add('js-hot');
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('role', 'button');
+    el.setAttribute('title', label);
+    el.setAttribute('aria-label', label);
+    function go(){
+      var t = document.getElementById(targetId);
+      if(!t) return;
+      try{ t.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); }
+      catch(e){ t.scrollIntoView(); }
+      flashCard(targetId);
+      if(!reduced){
+        el.classList.add('is-hot');
+        setTimeout(function(){ el.classList.remove('is-hot'); }, 1400);
+      }
+    }
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){ e.preventDefault(); go(); }
+    });
+  }
+
+  // 左图 01–03 吊牌
+  document.querySelectorAll('.map--ug .ug-block').forEach(function(b, i){
+    makeHot(b.querySelector('.tag'), 'shop-0' + (i + 1), '跳转到店铺卡片 0' + (i + 1));
+  });
+  // 中间 04 咖啡印章
+  var seal = document.querySelector('.metro-jump .coffee-seal');
+  if(seal) makeHot(seal, 'shop-04', '跳转到店铺卡片 04 · 咖啡复盘站');
+  // 右图 05–08 节点吊牌
+  document.querySelectorAll('.map--old .node').forEach(function(n){
+    var tag = n.querySelector('.tag');
+    if(!tag) return;
+    var m = (tag.textContent || '').trim().match(/^(0[5-8])/);
+    if(m) makeHot(tag, 'shop-' + m[1], '跳转到店铺卡片 ' + m[1]);
+  });
+  // 店铺卡自身的编号
+  wraps.forEach(function(wrap, i){
+    var no = i + 1;
+    makeHot(wrap.querySelector('.card-top .tag'), wrap.id, '店铺卡片 0' + no + ' · 点击重新定位');
+  });
+
+  /* ================= D2 勾选框：可点 + localStorage 记忆 ================= */
+  var STORE_KEY = 'wuhan-vintage-1024-checks';
+  var clBoxes = Array.prototype.slice.call(document.querySelectorAll('.checklist .cl-row .cb'));
+  var insBoxes = Array.prototype.slice.call(document.querySelectorAll('.inspect-list .cb'));
+  var allBoxes = clBoxes.concat(insBoxes);
+
+  var saved = null;
+  try{ saved = JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); }catch(e){}
+  if(saved && saved.v === 1 && Array.isArray(saved.s) && saved.s.length === allBoxes.length){
+    allBoxes.forEach(function(cb, i){ cb.classList.toggle('on', !!saved.s[i]); });
+  }else{
+    saved = { v: 1, s: allBoxes.map(function(cb){ return cb.classList.contains('on') ? 1 : 0; }) };
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify(saved)); }catch(e){}
+  }
+  function persist(){
+    saved.s = allBoxes.map(function(cb){ return cb.classList.contains('on') ? 1 : 0; });
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify(saved)); }catch(e){}
+  }
+  function updateCount(){
+    var n = 0;
+    clBoxes.forEach(function(cb){ if(cb.classList.contains('on')) n++; });
+    var el = document.getElementById('clCountN');
+    if(el) el.textContent = String(n);
+  }
+  allBoxes.forEach(function(cb){
+    if(cb.dataset.cbBound) return;
+    cb.dataset.cbBound = '1';
+    cb.classList.add('js-cb');
+    cb.setAttribute('role', 'checkbox');
+    cb.setAttribute('tabindex', '0');
+    cb.setAttribute('aria-checked', cb.classList.contains('on') ? 'true' : 'false');
+    function toggle(){
+      var on = cb.classList.toggle('on');
+      cb.setAttribute('aria-checked', on ? 'true' : 'false');
+      persist();
+      updateCount();
+    }
+    cb.addEventListener('click', toggle);
+    cb.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){ e.preventDefault(); toggle(); }
+    });
+  });
+  updateCount();
+  var resetBtn = document.getElementById('clReset');
+  if(resetBtn){
+    resetBtn.addEventListener('click', function(){
+      allBoxes.forEach(function(cb){
+        cb.classList.remove('on');
+        cb.setAttribute('aria-checked', 'false');
+      });
+      persist();
+      updateCount();
+    });
+  }
+
+  /* ================= 滚动入场（可降级 + 三重兜底，绝不永久隐藏内容） ================= */
+  var secs = document.querySelectorAll('.sec');
+  if(!reduced && 'IntersectionObserver' in window){
+    document.body.classList.add('js-anim');
+    var showAll = function(){ secs.forEach(function(s){ s.classList.add('in'); }); };
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -4% 0px' });
+    secs.forEach(function(s){ io.observe(s); });
+    setTimeout(showAll, 3000);                    // 兜底 1：3 秒后全部显示
+    window.addEventListener('beforeunload', showAll); // 兜底 2：离开页面前
+    window.addEventListener('pageshow', function(e){ if(e.persisted) showAll(); }); // 兜底 3：bfcache 回退
+  }
+})();
+</script>
+</body>
+</html>
